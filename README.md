@@ -9,7 +9,11 @@ share with everyone but are too small for a full blog post.
 ---
 
 ## Contents
+* [Algorithms](#algorithms)
 * [Miscellaneous](#miscellaneous)
+
+### Algorithms
+* [Newick Tree Format](algorithms/newick-tree-format.md)
 
 ### Miscellaneous 
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
