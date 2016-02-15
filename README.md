@@ -14,6 +14,7 @@ share with everyone but are too small for a full blog post.
 
 ### Algorithms
 * [Newick Tree Format](algorithms/newick-tree-format.md)
+* [KMP Algorithm for string matching](algorithms/kmp-matcher.md)
 
 ### Miscellaneous 
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
