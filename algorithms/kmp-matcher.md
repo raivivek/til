@@ -29,7 +29,7 @@ Essentially, the algorithm exploits the fact that the information of where the
 next match should start is contained in the pattern itself and can be computed
 independent of the text to be matched.
 
-Using the information is the array, a fast match can be performed.
+Using the information in the array, a fast match can be performed.
 
 See this [lecture](https://www.youtube.com/watch?v=EEjNb9yUv1k) for
 comprehensive detail.
