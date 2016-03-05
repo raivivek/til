@@ -18,8 +18,10 @@ share with everyone but are too small for a full blog post.
 
 ### Miscellaneous 
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
+* [SOAP-vs-REST](misc/SOAP-vs-REST.md)
 
 ### Python 
+
 * [Exploring itertools module](python/itertools-module.md)
 
 ---
