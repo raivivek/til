@@ -11,6 +11,7 @@ share with everyone but are too small for a full blog post.
 ## Contents
 * [Algorithms](#algorithms)
 * [Miscellaneous](#miscellaneous)
+* [Python](#python)
 
 ### Algorithms
 * [Newick Tree Format](algorithms/newick-tree-format.md)
@@ -23,6 +24,7 @@ share with everyone but are too small for a full blog post.
 ### Python 
 
 * [Exploring itertools module](python/itertools-module.md)
+* [Handy contextlib module](python/contextlib-with.md)
 
 ---
 
