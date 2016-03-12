@@ -17,12 +17,14 @@ share with everyone but are too small for a full blog post.
 * [Newick Tree Format](algorithms/newick-tree-format.md)
 * [KMP Algorithm for string matching](algorithms/kmp-matcher.md)
 
-### Miscellaneous 
+### Miscellaneous
+
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
+* [HMMER: Sequence search tool](misc/hmmer.md)
 * [SOAP-vs-REST](misc/SOAP-vs-REST.md)
 * [SQL vs NoSQL](misc/databases.md)
 
-### Python 
+### Python
 
 * [Exploring itertools module](python/itertools-module.md)
 * [Handy contextlib module](python/contextlib-with.md)
