@@ -23,11 +23,13 @@ share with everyone but are too small for a full blog post.
 * [HMMER: Sequence search tool](misc/hmmer.md)
 * [SOAP-vs-REST](misc/SOAP-vs-REST.md)
 * [SQL vs NoSQL](misc/databases.md)
+* [ORM and Database migration tools](python/sql-orm.md)
 
 ### Python
 
 * [Exploring itertools module](python/itertools-module.md)
 * [Handy contextlib module](python/contextlib-with.md)
+
 
 ---
 
