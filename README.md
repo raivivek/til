@@ -29,6 +29,7 @@ share with everyone but are too small for a full blog post.
 
 * [Exploring itertools module](python/itertools-module.md)
 * [Handy contextlib module](python/contextlib-with.md)
+* [pymust.watch videos](python/pymust-watch.md)
 
 
 ---
