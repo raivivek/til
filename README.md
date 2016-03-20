@@ -32,6 +32,9 @@ share with everyone but are too small for a full blog post.
 * [pymust.watch videos](python/pymust-watch.md)
 * [Super considered super! - Talk, PyCon Montreal 2015](python/super-talk.md)
 
+### Unix
+* [Run a command for fixed time](unix/timeout.md)
+
 ---
 
 ## Other TIL Collections
