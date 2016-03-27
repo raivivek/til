@@ -31,6 +31,7 @@ share with everyone but are too small for a full blog post.
 * [Handy contextlib module](python/contextlib-with.md)
 * [pymust.watch videos](python/pymust-watch.md)
 * [Super considered super! - Talk, PyCon Montreal 2015](python/super-talk.md)
+* [Writing `conda` recipes](python/conda-recipes.md)
 
 ### Unix
 * [Run a command for fixed time](unix/timeout.md)
