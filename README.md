@@ -34,6 +34,7 @@ Count so far: **13**
 * [pymust.watch videos](python/pymust-watch.md)
 * [Super considered super! - Talk, PyCon Montreal 2015](python/super-talk.md)
 * [Writing `conda` recipes](python/conda-recipes.md)
+* [Records: SQL for Humans](python/records-sql.md)
 
 ### Unix
 * [Run a command for fixed time](unix/timeout.md)
