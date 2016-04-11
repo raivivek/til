@@ -39,6 +39,7 @@ Count so far: **13**
 ### Unix
 * [Run a command for fixed time](unix/timeout.md)
 * [Fork a command to background](unix/fork-to-bg.md)
+* [Fetching random lines from a file](unix/random-lines.md)
 
 ---
 
