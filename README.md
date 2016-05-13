@@ -26,6 +26,7 @@ Count so far: **13**
 * [SOAP-vs-REST](misc/SOAP-vs-REST.md)
 * [SQL vs NoSQL](misc/databases.md)
 * [ORM and Database migration tools](python/sql-orm.md)
+* [Editing files on the remote server](misc/editing-remote-file.md)
 
 ### Python
 
