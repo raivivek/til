@@ -37,6 +37,7 @@ Count so far: **13**
 * [Writing `conda` recipes](python/conda-recipes.md)
 * [Records: SQL for Humans](python/records-sql.md)
 * [`multiprocessing` module for faster computation](python/optimize-pandas-mp.md)
+* [Don't use `readlines`](python/dont-use-readlines.md)
 
 ### Unix
 * [Run a command for fixed time](unix/timeout.md)
