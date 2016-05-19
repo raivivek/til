@@ -27,6 +27,7 @@ Count so far: **13**
 * [SQL vs NoSQL](misc/databases.md)
 * [ORM and Database migration tools](python/sql-orm.md)
 * [Editing files on the remote server](misc/editing-remote-file.md)
+* [Handling large dataset in R](misc/r-large-data.md)
 
 ### Python
 
