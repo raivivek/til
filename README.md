@@ -6,7 +6,7 @@ A collection of small snippets that I learn day to day across a variety of tasks
 I am involved in. Often, they are curious and useful insights that I wish to
 share with everyone but are too small for a full blog post.
 
-Count so far: **13**
+Count so far: **20**
 
 ---
 
@@ -14,6 +14,8 @@ Count so far: **13**
 * [Algorithms](#algorithms)
 * [Miscellaneous](#miscellaneous)
 * [Python](#python)
+* Unix
+* Math
 
 ### Algorithms
 * [Newick Tree Format](algorithms/newick-tree-format.md)
@@ -44,6 +46,10 @@ Count so far: **13**
 * [Run a command for fixed time](unix/timeout.md)
 * [Fork a command to background](unix/fork-to-bg.md)
 * [Fetching random lines from a file](unix/random-lines.md)
+
+### Math
+
+* [Permutation testing](math/permutation-testing.md)
 
 ---
 
