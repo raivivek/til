@@ -11,25 +11,17 @@ Count so far: **20**
 ---
 
 ## Contents
-* [Algorithms](#algorithms)
-* [Miscellaneous](#miscellaneous)
-* [Python](#python)
-* Unix
-* Math
+- [Algorithms](#algorithms)
+- [Python](#python)
+- [R](#r)
+- [Unix](#unix)
+- [Math | Stats](#math---stats)
+- [Miscellaneous (CS)](#miscellaneous--cs-)
+- [Miscellaneous (Non-CS)](#miscellaneous--non-cs-)
 
 ### Algorithms
 * [Newick Tree Format](algorithms/newick-tree-format.md)
 * [KMP Algorithm for string matching](algorithms/kmp-matcher.md)
-
-### Miscellaneous
-
-* [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
-* [HMMER: Sequence search tool](misc/hmmer.md)
-* [SOAP-vs-REST](misc/SOAP-vs-REST.md)
-* [SQL vs NoSQL](misc/databases.md)
-* [ORM and Database migration tools](python/sql-orm.md)
-* [Editing files on the remote server](misc/editing-remote-file.md)
-* [Handling large dataset in R](misc/r-large-data.md)
 
 ### Python
 
@@ -42,14 +34,32 @@ Count so far: **20**
 * [`multiprocessing` module for faster computation](python/optimize-pandas-mp.md)
 * [Don't use `readlines`](python/dont-use-readlines.md)
 
+### R
+
+* [Handling large dataset in R](misc/r-large-data.md)
+
 ### Unix
+
 * [Run a command for fixed time](unix/timeout.md)
 * [Fork a command to background](unix/fork-to-bg.md)
 * [Fetching random lines from a file](unix/random-lines.md)
 
-### Math
+### Math | Stats
 
 * [Permutation testing](math/permutation-testing.md)
+
+### Miscellaneous (CS)
+
+* [SOAP-vs-REST](misc/SOAP-vs-REST.md)
+* [SQL vs NoSQL](misc/databases.md)
+* [ORM and Database migration tools](python/sql-orm.md)
+* [Editing files on the remote server](misc/editing-remote-file.md)
+
+### Miscellaneous (Non-CS)
+
+* [Banzhaf Power Index] (misc/banzhaf-index.md)
+* [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
+* [HMMER: Sequence search tool](misc/hmmer.md)
 
 ---
 
