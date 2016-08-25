@@ -43,6 +43,7 @@ Count so far: **20**
 * [Run a command for fixed time](unix/timeout.md)
 * [Fork a command to background](unix/fork-to-bg.md)
 * [Fetching random lines from a file](unix/random-lines.md)
+* [OOM Killer - why did you task die?](unix/oom-killer.md)
 
 ### Math | Stats
 
