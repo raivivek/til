@@ -20,6 +20,7 @@ Count so far: **20**
 - [Miscellaneous (Non-CS)](#miscellaneous--non-cs-)
 
 ### Algorithms
+
 * [Newick Tree Format](algorithms/newick-tree-format.md)
 * [KMP Algorithm for string matching](algorithms/kmp-matcher.md)
 
@@ -33,6 +34,7 @@ Count so far: **20**
 * [Records: SQL for Humans](python/records-sql.md)
 * [`multiprocessing` module for faster computation](python/optimize-pandas-mp.md)
 * [Don't use `readlines`](python/dont-use-readlines.md)
+* [`pandas.get_dummies`: Vectorize a categorical variable](python/pandas-get-dummies.md)
 
 ### R
 
