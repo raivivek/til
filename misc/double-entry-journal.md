@@ -17,3 +17,5 @@ and its meaning. In effect, you are talking back to the author or speaker as you
 write your responses.
 
 You can try this technique for reading as well as listening materials.
+
+Find more [here](http://homepage.usask.ca/~dul381/common/dej.html).

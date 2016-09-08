@@ -18,6 +18,7 @@ Count so far: **24**
 - [Math | Stats](#math---stats)
 - [Miscellaneous (CS)](#miscellaneous--cs-)
 - [Miscellaneous (Non-CS)](#miscellaneous--non-cs-)
+- [Writing](#writing)
 
 ### Algorithms
 
