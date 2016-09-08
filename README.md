@@ -64,6 +64,10 @@ Count so far: **24**
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
 * [HMMER: Sequence search tool](misc/hmmer.md)
 
+### Writing
+
+* [Double Entry Journal (DEJ)](misc/double-entry-journal.md)
+
 ---
 
 ## Other TIL Collections
