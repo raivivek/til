@@ -47,6 +47,7 @@ Count so far: **24**
 * [Fork a command to background](unix/fork-to-bg.md)
 * [Fetching random lines from a file](unix/random-lines.md)
 * [OOM Killer - why did your task die?](unix/oom-killer.md)
+* [Latexmk: Autocompile `tex` files on change](unix/watch-compile-latex.md)
 
 ### Math | Stats
 
