@@ -6,7 +6,7 @@ A collection of small snippets that I learn day to day across a variety of tasks
 I am involved in. Often, they are curious and useful insights that I wish to
 share with everyone but are too small for a full blog post.
 
-Count so far: **24**
+Count so far: **27**
 
 ---
 
@@ -69,6 +69,7 @@ Count so far: **24**
 ### Writing
 
 * [Double Entry Journal (DEJ)](misc/double-entry-journal.md)
+* [Inverted-Pyramid Structure of Writing](misc/inverted-pyramid.md)
 
 ---
 
