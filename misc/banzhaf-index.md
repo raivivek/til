@@ -6,9 +6,9 @@ calculate the power (the ability to influence a group’s decision in a social o
 political setting, for example) of a voter in a group of coalition.
 
 For example, a company where different people hold different percentage of
-shares, an electoral college where different states have different
-representatives -- leading some members of the coalition having influence in
-majority of the situation compared to others. Such a shareholder or voter or
+sharesa or an electoral college where different states have different
+representatives leading to some members of the coalition *having more influence in
+majority of the situation compared to others*. Such a shareholder or voter or
 member is called a *critical voter*.
 
 Source: A Mathematician Reads a Newspaper, Paulos

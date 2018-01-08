@@ -62,7 +62,7 @@ Count so far: **27**
 
 ### Miscellaneous (Non-CS)
 
-* [Banzhaf Power Index] (misc/banzhaf-index.md)
+* [Banzhaf Power Index](misc/banzhaf-index.md)
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
 * [HMMER: Sequence search tool](misc/hmmer.md)
 
