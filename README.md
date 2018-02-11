@@ -63,8 +63,10 @@ Count so far: **27**
 ### Miscellaneous (Non-CS)
 
 * [Banzhaf Power Index](misc/banzhaf-index.md)
+* [Pizza Effect](misc/pizza-effect.md)
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
 * [HMMER: Sequence search tool](misc/hmmer.md)
+* [Snakemake and HPC](misc/snakemake-on-hpc.md)
 
 ### Writing
 
