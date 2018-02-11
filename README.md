@@ -6,7 +6,7 @@ A collection of small snippets that I learn day to day across a variety of tasks
 I am involved in. Often, they are curious and useful insights that I wish to
 share with everyone but are too small for a full blog post.
 
-Count so far: **27**
+Count so far: **30**
 
 ---
 
@@ -24,6 +24,10 @@ Count so far: **27**
 
 * [Newick Tree Format](algorithms/newick-tree-format.md)
 * [KMP Algorithm for string matching](algorithms/kmp-matcher.md)
+
+### Biology
+
+* ['Thrify' gene hypothesis](biology/'thrifty'-gene-hypothesis.md)
 
 ### Python
 
@@ -53,20 +57,20 @@ Count so far: **27**
 
 * [Permutation testing](math/permutation-testing.md)
 
-### Miscellaneous (CS)
+### Computing
 
 * [SOAP-vs-REST](misc/SOAP-vs-REST.md)
 * [SQL vs NoSQL](misc/databases.md)
 * [ORM and Database migration tools](python/sql-orm.md)
 * [Editing files on the remote server](misc/editing-remote-file.md)
+* [Snakemake and HPC](misc/snakemake-on-hpc.md)
 
-### Miscellaneous (Non-CS)
+### Miscellaneous
 
 * [Banzhaf Power Index](misc/banzhaf-index.md)
 * [Pizza Effect](misc/pizza-effect.md)
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
 * [HMMER: Sequence search tool](misc/hmmer.md)
-* [Snakemake and HPC](misc/snakemake-on-hpc.md)
 
 ### Writing
 
