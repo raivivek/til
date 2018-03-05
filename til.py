@@ -10,10 +10,10 @@ TIL_PATH = '/home/vivekrai/src/til'
 def make_note(_cat):
     initial_message = b'## '
 
-    _cat = os.path.join(TIL_PATH, _cat)
-    if not os.path.exists(_cat):
-        print("Directory created.")
-        os.mkdir(_cat)
+    _cat_p = os.path.join(TIL_PATH, _cat)
+    if not os.path.exists(_cat_p):
+        print("Category created: til:{}/".format(_cat))
+        os.mkdir(_cat_p)
 
     with tempfile.NamedTemporaryFile(suffix=".tmp") as tf:
         tf.write(initial_message)
@@ -27,7 +27,7 @@ def make_note(_cat):
         title = tf.readline().decode('utf8').strip('#').strip().lower()
         title = '-'.join(title.split(' ')) + '.md' # process title
 
-        with open(os.path.join(_cat, title), 'ab+') as f:
+        with open(os.path.join(_cat_p, title), 'ab+') as f:
             f.write(note)
 
 
