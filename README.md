@@ -28,6 +28,7 @@ Count so far: **30**
 ### Biology
 
 * ['Thrify' gene hypothesis](biology/'thrifty'-gene-hypothesis.md)
+* [The Omnigenic Model](biology/the-omnigenic-model.md)
 
 ### Python
 
@@ -71,6 +72,8 @@ Count so far: **30**
 * [Pizza Effect](misc/pizza-effect.md)
 * [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
 * [HMMER: Sequence search tool](misc/hmmer.md)
+* [Getting Research Ideas - I](misc/getting-research-ideas-i.md)
+* [Quickly organizing a research proposal](misc/quickly-organizing-ideas.md)
 
 ### Writing
 
