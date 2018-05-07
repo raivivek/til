@@ -3,17 +3,19 @@
 I read a psychology paper on self-experimentation that followed a neat and
 consistent style of documenting the results. For example:
 
-> # Premise: Water --> Weight Loss
-> #
-> # Background
-> #
-> # Birth of the idea
-> #
-> # Test
-> #
-> # Related results
-> #
-> # Discussion
+```
+# Premise
+
+# Background
+
+# Birth of the idea
+
+# Test
+
+# Related results
+
+# Discussion
+```
 
 This appears as an excellent structure to quickly summarize ideas, experiments,
 or write a research note. The prelim analysis or a quick test of the idea can go
