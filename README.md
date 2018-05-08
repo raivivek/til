@@ -74,6 +74,8 @@ Count so far: **30**
 * [HMMER: Sequence search tool](misc/hmmer.md)
 * [Getting Research Ideas - I](misc/getting-research-ideas-i.md)
 * [Quickly organizing a research proposal](misc/quickly-organizing-ideas.md)
+* [Using Zotero WebDAV setup for file-sync storage](misc/zotero-webdav-setup.md)
+
 
 ### Writing
 
