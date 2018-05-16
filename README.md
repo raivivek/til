@@ -82,7 +82,7 @@ Count so far: **30**
 
 * [Double Entry Journal (DEJ)](misc/double-entry-journal.md)
 * [Inverted-Pyramid structure of writing](misc/inverted-pyramid.md)
-* [Rhetorical-Precis-Format of writing](misc/the-rhetorical-precis-format.md)
+* [Rhetorical-Precis-Format of writing](misc/rhetorical-precis-format.md)
 
 ---
 

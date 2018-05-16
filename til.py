@@ -4,29 +4,29 @@ import sys, tempfile, os
 from subprocess import call
 
 
-EDITOR = os.environ.get('EDITOR', 'nvim')
-CONFIG_PATH = os.path.expanduser('~/.config/til/til.conf')
+EDITOR = os.environ.get('EDITOR', 'vim')
 
 
-def create_til_config():
+def create_til_config(config_path):
     """ Create a `~/.config/til/til.conf` config file with location to the
     appropriate today-i-learned directory.
     """
 
-    if not os.path.exists(CONFIG_PATH):
+    config_path = os.path.expanduser(config_path)
+    print(config_path)
+
+    if not os.path.exists(config_path):
         til_path = input("Set TIL dir path: ")
         while not os.path.exists(til_path):
             til_path = input("Set TIL dir path: ")
-        os.makedirs(os.path.dirname(CONFIG_PATH), exist_ok = True)
-        with open(CONFIG_PATH, 'w') as f:
+        os.makedirs(os.path.dirname(config_path), exist_ok = True)
+        with open(config_path, 'w') as f:
             f.write(til_path)
 
-    with open(CONFIG_PATH, 'r') as f:
-        til_path = f.read()
+    with open(config_path, 'r') as f:
+        til_path = f.read().strip()
 
-    print(til_path)
     return til_path
-
 
 
 def make_note(_cat, til_path):
@@ -39,30 +39,32 @@ def make_note(_cat, til_path):
     til_path: str, file-path to today-i-learned directory
     """
 
-    initial_message = b'## '
-
     _cat_p = os.path.join(til_path, _cat)
     if not os.path.exists(_cat_p):
         print("Category created: til:{}/".format(_cat))
         os.mkdir(_cat_p)
 
-    with tempfile.NamedTemporaryFile(suffix=".tmp") as tf:
-        tf.write(initial_message)
-        tf.flush()
-        call([EDITOR, tf.name])
+    tf = tempfile.NamedTemporaryFile(suffix=".tmp", delete=False)
 
-        # parse note
-        # TODO: investigate error on macos
-        tf.seek(0)
-        note = tf.read()
-        tf.seek(0)
-        title = tf.readline().decode('utf8').strip('#').strip().lower()
-        title = '-'.join(title.split(' ')) + '.md' # process title
+    tf.write(b'## ')
+    tf.close()
 
-        print(title)
+    call([EDITOR, tf.name])
 
-        with open(os.path.join(_cat_p, title), 'ab+') as f:
-            f.write(note)
+    # open file again to process title and note content
+    tf = open(tf.name, 'r')
+    title = tf.readline().decode('utf8').strip('#').strip().lower()
+    title = '-'.join(title.split(' ')) + '.md' # process title
+    print(title)
+
+    tf.seek(0)
+    note = tf.read()
+
+    with open(os.path.join(_cat_p, title), 'ab+') as f:
+        f.write(note)
+    
+    tf.close()
+    os.unlink(tf.name)
 
 
 def update_readme():
@@ -71,12 +73,22 @@ def update_readme():
 
 if __name__ == '__main__':
     from sys import argv
+    import argparse
 
-    til_path = create_til_config()
+    parser = argparse.ArgumentParser()
 
-    if len(argv) < 2:
-        _cat = input("Category: ")
-    else:
-        _cat = argv[1]
+    parser.add_argument('-t',
+                        help = 'type or category of post (default: unclassified)',
+                        default = 'unclassified')
+    parser.add_argument('-c', '--config',
+                        help = 'path to config file (default: ~/.config/til/til.conf)',
+                        default = '~/.config/til/til.conf')
 
-    make_note(_cat, til_path)
+    args = parser.parse_args()
+
+    til_path = create_til_config(args.config)
+
+    if args.t == 'misc':
+        print("Category not set (use -t), saving to `misc`")
+
+    make_note(args.t, til_path)
