@@ -53,6 +53,7 @@ Count so far: **30**
 * [Fetching random lines from a file](unix/random-lines.md)
 * [OOM Killer - why did your task die?](unix/oom-killer.md)
 * [Latexmk: Autocompile `tex` files on change](unix/watch-compile-latex.md)
+* [Adjusting priority of running processes](unix/ionicing-programs.md)
 
 ### Math | Stats
 
@@ -92,6 +93,6 @@ Count so far: **30**
 
 ## License
 
-© 2015 Vivek Rai
+© 2015-2018 Vivek Rai
 
 This repository is distributed under the MIT license
