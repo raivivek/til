@@ -1,6 +1,18 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
-import sys, tempfile, os
+""" Create a today-i-learned note in the target repository.
+
+Features:
+    1. Opens a scratch window in your editor to create the note
+    2. Provides command line options to specify categories
+    3. Saves note at target TIL path (configured in `~/.config/til/til.conf`
+"""
+
+__author__ = 'vivekrai'
+
+import os
+import sys
+import tempfile
 from subprocess import call
 
 
@@ -19,7 +31,7 @@ def create_til_config(config_path):
         til_path = input("Set TIL dir path: ")
         while not os.path.exists(til_path):
             til_path = input("Set TIL dir path: ")
-        os.makedirs(os.path.dirname(config_path), exist_ok = True)
+        os.makedirs(os.path.dirname(config_path), exist_ok=True)
         with open(config_path, 'w') as f:
             f.write(til_path)
 
@@ -54,15 +66,14 @@ def make_note(_cat, til_path):
     # open file again to process title and note content
     tf = open(tf.name, 'r')
     title = tf.readline().decode('utf8').strip('#').strip().lower()
-    title = '-'.join(title.split(' ')) + '.md' # process title
-    print(title)
+    title = '-'.join(title.split(' ')) + '.md'  # process title
 
     tf.seek(0)
     note = tf.read()
 
     with open(os.path.join(_cat_p, title), 'ab+') as f:
         f.write(note)
-    
+
     tf.close()
     os.unlink(tf.name)
 
@@ -71,6 +82,7 @@ def update_readme():
     # run this to auto-update README.md
     pass
 
+
 if __name__ == '__main__':
     from sys import argv
     import argparse
@@ -78,11 +90,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-t',
-                        help = 'type or category of post (default: unclassified)',
-                        default = 'unclassified')
+                        help='type or category of post (default: unclassified)',
+                        default='unclassified')
     parser.add_argument('-c', '--config',
-                        help = 'path to config file (default: ~/.config/til/til.conf)',
-                        default = '~/.config/til/til.conf')
+                        help='path to config file (default: ~/.config/til/til.conf)',
+                        default='~/.config/til/til.conf')
 
     args = parser.parse_args()
 
