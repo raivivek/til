@@ -48,7 +48,8 @@ def get_title(filepath):
 
 
 def get_permalink(title):
-    return '--'.join([x.strip() for x in title.lower().split('|')])
+    fix_pipes = '--'.join([x.strip() for x in title.lower().split('|')])
+    return '-'.join(fix_pipes.split(' '))
 
 
 def write_entries(root, output):

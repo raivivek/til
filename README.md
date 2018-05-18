@@ -7,15 +7,15 @@ share with everyone but are too small for a full blog post.
 **Count: 38**
 
 ## Contents
-* [R (lang)](#r (lang))
+* [R (lang)](#r-(lang))
 * [Algorithms](#algorithms)
 * [Biology](#biology)
 * [Computing](#computing)
 * [Statistics | Methods | Math](#statistics--methods--math)
 * [Miscellaneous](#miscellaneous)
 * [Productivity](#productivity)
-* [Python (lang)](#python (lang))
-* [GNU Unix | Command line](#gnu unix--command line)
+* [Python (lang)](#python-(lang))
+* [GNU Unix | Command line](#gnu-unix--command-line)
 * [Writing](#writing)
 
 R (lang)
@@ -97,5 +97,3 @@ Writing
 ## License
 
 © 2015-2018 Vivek Rai
-
-This repository is distributed under the MIT license
