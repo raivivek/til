@@ -25,7 +25,6 @@ def create_til_config(config_path):
     """
 
     config_path = os.path.expanduser(config_path)
-    print(config_path)
 
     if not os.path.exists(config_path):
         til_path = input("Set TIL dir path: ")
@@ -61,15 +60,24 @@ def make_note(_cat, til_path):
     tf.write(b'## ')
     tf.close()
 
+    # get pre and post edit file sizes to check if user has made
+    # any meaningful changes: discard if less than 10 chars added
+    _pre_size = os.path.getsize(tf.name)
     call([EDITOR, tf.name])
+    _post_size = os.path.getsize(tf.name)
+
+    if abs(_pre_size - _post_size) < 10:
+        print("Discarding note. Exit.")
+        sys.exit(0)
 
     # open file again to process title and note content
-    tf = open(tf.name, 'r')
+    tf = open(tf.name, 'rb')
+    note = tf.read()
+
+    tf.seek(0)
     title = tf.readline().decode('utf8').strip('#').strip().lower()
     title = '-'.join(title.split(' ')) + '.md'  # process title
 
-    tf.seek(0)
-    note = tf.read()
 
     with open(os.path.join(_cat_p, title), 'ab+') as f:
         f.write(note)
@@ -84,7 +92,6 @@ def update_readme():
 
 
 if __name__ == '__main__':
-    from sys import argv
     import argparse
 
     parser = argparse.ArgumentParser()
@@ -100,7 +107,7 @@ if __name__ == '__main__':
 
     til_path = create_til_config(args.config)
 
-    if args.t == 'misc':
-        print("Category not set (use -t), saving to `misc`")
+    if args.t == 'unclassified':
+        print("Category not set (use -t), saving to `unclassified`")
 
     make_note(args.t, til_path)
