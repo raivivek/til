@@ -47,11 +47,26 @@ def get_title(filepath):
     return title.strip('#').strip()
 
 
+def get_permalink(title):
+    return '--'.join([x.strip() for x in title.lower().split('|')])
+
+
 def write_entries(root, output):
     files = scan_files(root)
     out = []
 
     out.append("**Count: {}**\n\n".format(sum([len(x) for x in files.values()])))
+
+    # write short-toc
+    out.append("## Contents\n")
+    for k, v in sorted(files.items(), key=operator.itemgetter(0)):
+        cleaned_title = __categories[k.strip('./')]
+        out.append("* [{}](#{})\n".format(cleaned_title,
+                                          get_permalink(cleaned_title)))
+    out.append("\n")
+
+
+    # write full-toc
     for k, v in sorted(files.items(), key=operator.itemgetter(0)):
         out.append("{}\n------\n".format(__categories[k.strip('./')]))
         for file_ in v:

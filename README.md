@@ -1,80 +1,90 @@
-# TIL
-
-> Today I Learned
+# TIL (Today I Learned)
 
 A collection of small snippets that I learn day to day across a variety of tasks
 I am involved in. Often, they are curious and useful insights that I wish to
 share with everyone but are too small for a full blog post.
 
-Count so far: **38**
-
----
+**Count: 38**
 
 ## Contents
-- [Algorithms](#algorithms)
-- [Python](#python)
-- [R](#r)
-- [Unix](#unix)
-- [Math | Stats](#math---stats)
-- [Miscellaneous (CS)](#miscellaneous--cs-)
-- [Miscellaneous (Non-CS)](#miscellaneous--non-cs-)
-- [Writing](#writing)
+* [R (lang)](#r (lang))
+* [Algorithms](#algorithms)
+* [Biology](#biology)
+* [Computing](#computing)
+* [Statistics | Methods | Math](#statistics--methods--math)
+* [Miscellaneous](#miscellaneous)
+* [Productivity](#productivity)
+* [Python (lang)](#python (lang))
+* [GNU Unix | Command line](#gnu unix--command line)
+* [Writing](#writing)
 
-### Algorithms
-* [Newick Tree Format](algorithms/newick-tree-format.md)
-* [KMP Algorithm for string matching](algorithms/kmp-matcher.md)
+R (lang)
+------
+* [Large datasets in `R`](./R/r-large-data.md)
 
-### Biology
-* ['Thrify' gene hypothesis](biology/'thrifty'-gene-hypothesis.md)
-* [The Omnigenic Model](biology/the-omnigenic-model.md)
+Algorithms
+------
+* [Newick Tree Format](./algorithms/newick-tree-format.md)
+* [KMP Algorithm](./algorithms/kmp-matcher.md)
 
-### Python
-* [Exploring itertools module](python/itertools-module.md)
-* [Handy contextlib module](python/contextlib-with.md)
-* [pymust.watch videos](python/pymust-watch.md)
-* [Super considered super! - Talk, PyCon Montreal 2015](python/super-talk.md)
-* [Writing `conda` recipes](python/conda-recipes.md)
-* [Records: SQL for Humans](python/records-sql.md)
-* [`multiprocessing` module for faster computation](python/optimize-pandas-mp.md)
-* [Don't use `readlines`](python/dont-use-readlines.md)
-* [`pandas.get_dummies`: Vectorize a categorical variable](python/pandas-get-dummies.md)
+Biology
+------
+* [Pedigree Collapse](./biology/pedigree-collapse.md)
+* [The Omnigenic Model](./biology/the-omnigenic-model.md)
+* ['Thrifty' gene hypothesis](./biology/'thrifty'-gene-hypothesis.md)
 
-### R
-* [Handling large dataset in R](misc/r-large-data.md)
+Computing
+------
+* [Snakemake on HPC](./computing/snakemake-on-hpc.md)
+* [SOAP-vs-REST stack](./computing/SOAP-vs-REST.md)
+* [Database comparison](./computing/databases.md)
+* [Editing remote files](./computing/editing-remote-file.md)
 
-### Unix
-* [Run a command for fixed time](unix/timeout.md)
-* [Fork a command to background](unix/fork-to-bg.md)
-* [Fetching random lines from a file](unix/random-lines.md)
-* [OOM Killer - why did your task die?](unix/oom-killer.md)
-* [Latexmk: Autocompile `tex` files on change](unix/watch-compile-latex.md)
-* [Adjusting priority of running processes](unix/ionicing-programs.md)
+Statistics | Methods | Math
+------
+* [Permutation testing](./math/permutation-testing.md)
 
-### Math | Stats
-* [Permutation testing](math/permutation-testing.md)
+Miscellaneous
+------
+* [Banzhaf Power Index](./misc/banzhaf-index.md)
+* [HMMER](./misc/hmmer.md)
+* [Choosing right Wifi channel](./misc/choosing-wifi-channel.md)
+* [Using Zotero with WebDAV for file storage](./misc/zotero-webdav-setup.md)
+* [Pizza Effect](./misc/pizza-effect.md)
 
-### Computing
-* [SOAP-vs-REST](computing/SOAP-vs-REST.md)
-* [SQL vs NoSQL](computing/databases.md)
-* [ORM and Database migration tools](python/sql-orm.md)
-* [Snakemake and HPC](computing/snakemake-on-hpc.md)
-* [Editing files on the remote server](computing/editing-remote-file.md)
+Productivity
+------
+* [Getting Research Idea I](./productivity/getting-research-idea-i.md)
+* [Quickly organizing ideas](./productivity/quickly-organizing-ideas.md)
 
-### Miscellaneous
-* [Banzhaf Power Index](misc/banzhaf-index.md)
-* [Pizza Effect](misc/pizza-effect.md)
-* [Choosing right Wifi channel can boost speed](misc/choosing-wifi-channel.md)
-* [HMMER: Sequence search tool](misc/hmmer.md)
-* [Using Zotero WebDAV setup for file-sync storage](misc/zotero-webdav-setup.md)
+Python (lang)
+------
+* [Itertools module](./python/itertools-module.md)
+* [ORMs and Database migration](./python/sql-orm.md)
+* [Records: SQL for Humans](./python/records-sql.md)
+* [pymust.watch](./python/pymust-watch.md)
+* [Don't use `f.readlines()`](./python/dont-use-readlines.md)
+* [Super considered super!](./python/super-talk.md)
+* [Writing Conda Recipes](./python/conda-recipes.md)
+* [`contextlib` module](./python/contextlib-with.md)
+* [`multiprocessing` module in Python](./python/optimize-pandas-mp.md)
+* [`pandas.get_dummies`: Vectorize category variables](./python/pandas-get-dummies.md)
 
-### Productivity
-* [Getting Research Ideas - I](productivity/getting-research-ideas-i.md)
-* [Quickly organizing a research proposal](productivity/quickly-organizing-ideas.md)
+GNU Unix | Command line
+------
+* [Fork a command to background](./unix/fork-to-bg.md)
+* [Fetch random lines from file](./unix/random-lines.md)
+* [Concatenate files with same header](./unix/concatenate-files-with-same-header.md)
+* [Watch LaTeX file and autocompile](./unix/watch-compile-latex.md)
+* [Changing priority of running programs](./unix/ionicing-programs.md)
+* [OOM Killer](./unix/oom-killer.md)
+* [Run a command for some time](./unix/timeout.md)
 
-### Writing
-* [Double Entry Journal (DEJ)](writing/double-entry-journal.md)
-* [Inverted-Pyramid structure of writing](writing/inverted-pyramid.md)
-* [Rhetorical-Precis-Format of writing](writing/rhetorical-precis-format.md)
+Writing
+------
+* [Headlines and the Inverted Pyramid](./writing/inverted-pyramid.md)
+* [Double Entry Journal](./writing/double-entry-journal.md)
+* [Rhetorical Précis Format](./writing/rhetorical-precis-format.md)
 
 ---
 
