@@ -69,7 +69,7 @@ def write_entries(root, output):
 
     # write full-toc
     for k, v in sorted(files.items(), key=operator.itemgetter(0)):
-        out.append("{}\n------\n".format(__categories[k.strip('./')]))
+        out.append("### {}\n".format(__categories[k.strip('./')]))
         for file_ in v:
             path_ = os.path.join(k, file_)
             out.append("* [{}]({})\n".format(get_title(path_), path_))
