@@ -79,7 +79,6 @@ def make_note(_cat, til_path):
     title = tf.readline().decode('utf8').strip('#').strip().lower()
     title = '-'.join(title.split(' ')) + '.md'  # process title
 
-
     with open(os.path.join(_cat_p, title), 'ab+') as f:
         f.write(note)
 

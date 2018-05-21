@@ -7,7 +7,7 @@ in inverted pyramid fashion, i.e., beginning a news story with a headline, then
 a lead paragraph or two in which the Who, What, When, Where, Why and How
 questions are briefly angered, followed by the body of the story, the most
 salient details first. If a new idea is introduced later, its development has
-this same inverted-pyramid structure: a smaller headline, followed by the lead,
+this same inverted-pyramid structure: a smaller headline, followed by the lead
 and then more details.
 
 Sounds simple enough, but why, one may ask. The advantage of this structure is
