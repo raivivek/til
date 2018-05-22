@@ -25,7 +25,9 @@ __categories = {
         'computing': 'Computing',
         'writing': 'Writing',
         'math': 'Statistics | Methods | Math',
-        'biology': 'Biology'
+        'biology': 'Biology',
+        'lessons': 'Zen lessons',
+        'unclassified': 'Unclassified'
         }
 
 

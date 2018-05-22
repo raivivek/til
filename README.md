@@ -4,61 +4,58 @@ A collection of small snippets that I learn day to day across a variety of tasks
 I am involved in. Often, they are curious and useful insights that I wish to
 share with everyone but are too small for a full blog post.
 
-**Count: 38**
+**Count: 40**
 
 ## Contents
 * [R (lang)](#r-(lang))
 * [Algorithms](#algorithms)
 * [Biology](#biology)
 * [Computing](#computing)
+* [Zen lessons](#zen-lessons)
 * [Statistics | Methods | Math](#statistics--methods--math)
 * [Miscellaneous](#miscellaneous)
 * [Productivity](#productivity)
 * [Python (lang)](#python-(lang))
+* [Unclassified](#unclassified)
 * [GNU Unix | Command line](#gnu-unix--command-line)
 * [Writing](#writing)
 
-R (lang)
-------
+### R (lang)
 * [Large datasets in `R`](./R/r-large-data.md)
 
-Algorithms
-------
+### Algorithms
 * [Newick Tree Format](./algorithms/newick-tree-format.md)
 * [KMP Algorithm](./algorithms/kmp-matcher.md)
 
-Biology
-------
+### Biology
 * [Pedigree Collapse](./biology/pedigree-collapse.md)
 * [The Omnigenic Model](./biology/the-omnigenic-model.md)
 * ['Thrifty' gene hypothesis](./biology/'thrifty'-gene-hypothesis.md)
 
-Computing
-------
+### Computing
 * [Snakemake on HPC](./computing/snakemake-on-hpc.md)
 * [SOAP-vs-REST stack](./computing/SOAP-vs-REST.md)
 * [Database comparison](./computing/databases.md)
 * [Editing remote files](./computing/editing-remote-file.md)
 
-Statistics | Methods | Math
-------
+### Zen lessons
+* [The value of being slow](./lessons/the-value-of-being-slow.md)
+
+### Statistics | Methods | Math
 * [Permutation testing](./math/permutation-testing.md)
 
-Miscellaneous
-------
+### Miscellaneous
 * [Banzhaf Power Index](./misc/banzhaf-index.md)
 * [HMMER](./misc/hmmer.md)
 * [Choosing right Wifi channel](./misc/choosing-wifi-channel.md)
 * [Using Zotero with WebDAV for file storage](./misc/zotero-webdav-setup.md)
 * [Pizza Effect](./misc/pizza-effect.md)
 
-Productivity
-------
+### Productivity
 * [Getting Research Idea I](./productivity/getting-research-idea-i.md)
 * [Quickly organizing ideas](./productivity/quickly-organizing-ideas.md)
 
-Python (lang)
-------
+### Python (lang)
 * [Itertools module](./python/itertools-module.md)
 * [ORMs and Database migration](./python/sql-orm.md)
 * [Records: SQL for Humans](./python/records-sql.md)
@@ -69,9 +66,11 @@ Python (lang)
 * [`contextlib` module](./python/contextlib-with.md)
 * [`multiprocessing` module in Python](./python/optimize-pandas-mp.md)
 * [`pandas.get_dummies`: Vectorize category variables](./python/pandas-get-dummies.md)
+* [Care with `string.split()`](./python/care-with-`string.split()`.md)
 
-GNU Unix | Command line
-------
+### Unclassified
+
+### GNU Unix | Command line
 * [Fork a command to background](./unix/fork-to-bg.md)
 * [Fetch random lines from file](./unix/random-lines.md)
 * [Concatenate files with same header](./unix/concatenate-files-with-same-header.md)
@@ -80,8 +79,7 @@ GNU Unix | Command line
 * [OOM Killer](./unix/oom-killer.md)
 * [Run a command for some time](./unix/timeout.md)
 
-Writing
-------
+### Writing
 * [Headlines and the Inverted Pyramid](./writing/inverted-pyramid.md)
 * [Double Entry Journal](./writing/double-entry-journal.md)
 * [Rhetorical Précis Format](./writing/rhetorical-precis-format.md)
