@@ -96,7 +96,8 @@ def update_readme():
 if __name__ == '__main__':
     import argparse
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=
+            "til lets you quickly create today-i-learned notes. Run til -h for more options.")
 
     parser.add_argument('-c',
                         help='type or category of post (default: unclassified)',
