@@ -28,11 +28,12 @@ a template became necessary.
 [Snakemake-template](https://github.com/raivivek/snakemake-template)
 
 ### Template
-
+```
 ├── cluster.yaml
 ├── config.yaml
 ├── run_cluster.sh
 └── Snakefile
+```
 
 `config.yaml`: Specifies configuration and filepath etc.
 `cluster.yaml`: Specifies how the jobs should be submitted to SLURM.
