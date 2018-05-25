@@ -50,6 +50,7 @@ share with everyone but are too small for a full blog post.
 * [Choosing right Wifi channel](./misc/choosing-wifi-channel.md)
 * [Using Zotero with WebDAV for file storage](./misc/zotero-webdav-setup.md)
 * [Pizza Effect](./misc/pizza-effect.md)
+* [Flash Asus TM-AC1900 to RT-AC68U](https://gist.github.com/raivivek/09b515420735a259091fc9e20d55dcb2)
 
 ### Productivity
 * [Getting Research Idea I](./productivity/getting-research-idea-i.md)
