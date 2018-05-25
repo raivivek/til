@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-""" Create a today-i-learned note in the target repository.
+""" Create a today-i-learned note in the target directory.
 
 Features:
     1. Opens a scratch window in your editor to create the note
@@ -29,12 +29,13 @@ def create_til_config(config_path):
     config_path = os.path.expanduser(config_path)
 
     if not os.path.exists(config_path):
-        til_path = input("Set TIL dir path: ")
+        til_path = input("Set save directory for your TIL notes? ")
         while not os.path.exists(til_path):
-            til_path = input("Set TIL dir path: ")
+            til_path = input("Set save directory for your TIL notes? ")
         os.makedirs(os.path.dirname(config_path), exist_ok=True)
         with open(config_path, 'w') as f:
             f.write(til_path)
+            print("Created TIL config file: {}".format(config_path))
 
     with open(config_path, 'r') as f:
         til_path = f.read().strip()
@@ -54,8 +55,8 @@ def make_note(_cat, til_path):
 
     _cat_p = os.path.join(til_path, _cat)
     if not os.path.exists(_cat_p):
-        print("Category created: til:{}/".format(_cat))
         os.mkdir(_cat_p)
+        print("Category created: til:{}/".format(_cat))
 
     tf = tempfile.NamedTemporaryFile(suffix=".tmp", delete=False)
 
@@ -97,10 +98,10 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('-t',
+    parser.add_argument('-c',
                         help='type or category of post (default: unclassified)',
                         default='unclassified')
-    parser.add_argument('-c', '--config',
+    parser.add_argument('-C', '--config',
                         help='path to config file (default: ~/.config/til/til.conf)',
                         default='~/.config/til/til.conf')
 
@@ -108,8 +109,10 @@ if __name__ == '__main__':
 
     til_path = create_til_config(args.config)
 
-    if args.t == 'unclassified':
-        print("Category not set (use -t), saving to `unclassified`")
-        sleep(.5)
+    if args.c == 'unclassified':
+        print("til autosaves your note to categorized directories")
+        response = input("Since category is not set (use -c), save to `unclassified`? [y]/n ")
+        if response != 'y':
+            args.c = input("Category: ")
 
-    make_note(args.t, til_path)
+    make_note(args.c, til_path)
