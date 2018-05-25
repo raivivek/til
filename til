@@ -112,7 +112,7 @@ if __name__ == '__main__':
 
     if args.c == 'unclassified':
         print("til autosaves your note to categorized directories")
-        response = input("Since category is not set (use -c), save to `unclassified`? [y]/n ")
+        response = input("Since category is not set (use -c), save to `unclassified`? y/[n] ")
         if response != 'y':
             args.c = input("Category: ")
 
