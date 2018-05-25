@@ -86,7 +86,9 @@ def write_entries(root, output):
 if __name__ == '__main__':
     import argparse
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="""
+    Prints a markdown listing of posts from the til directory to target file
+    (default: stdout). You may use the output whicever way you like.""")
 
     parser.add_argument('-r', '--root',
                         help="Root directory to scan for files",
