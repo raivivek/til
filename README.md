@@ -37,6 +37,7 @@ share with everyone but are too small for a full blog post.
 * [SOAP-vs-REST stack](./computing/SOAP-vs-REST.md)
 * [Database comparison](./computing/databases.md)
 * [Editing remote files](./computing/editing-remote-file.md)
+* [`pkg-config` for compilation](./computing/pkg-config-for-compilation.md)
 
 ### Zen lessons
 * [The value of being slow](./lessons/the-value-of-being-slow.md)
