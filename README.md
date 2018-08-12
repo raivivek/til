@@ -23,6 +23,7 @@ share with everyone but are too small for a full blog post.
 ### R (lang)
 * [Large datasets in `R`](./R/r-large-data.md)
 * [Modifying `ggplot2` objects after creation](./R/modifying-ggplot2-objects-after-creation.md)
+* [Using-conditionals-(`if`-`else`)-in-data-pipes.md](./R/using-conditionals-(`if`-`else`)-in-data-pipes.md)
 
 ### Algorithms
 * [Newick Tree Format](./algorithms/newick-tree-format.md)

@@ -31,11 +31,11 @@ def create_til_config(config_path):
     if not os.path.exists(config_path):
         til_path = input("Set save directory for your TIL notes? ")
         while not os.path.exists(til_path):
-            til_path = input("Set save directory for your TIL notes? ")
+            til_path = input("(error) Set save directory for your TIL notes? ")
         os.makedirs(os.path.dirname(config_path), exist_ok=True)
         with open(config_path, 'w') as f:
             f.write(til_path)
-            print("Created TIL config file: {}".format(config_path))
+            print("Created config file: {}".format(config_path))
 
     with open(config_path, 'r') as f:
         til_path = f.read().strip()
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(description=
-            "til lets you quickly create today-i-learned notes. Run til -h for more options.")
+            "til lets you quickly create today-i-learned notes. Use -h for more help.")
 
     parser.add_argument('-c',
                         help='type or category of post (default: unclassified)',
