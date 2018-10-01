@@ -8,39 +8,67 @@ Features:
     3. Saves note at target TIL path (configured in `~/.config/til/til.conf`
 """
 
-__author__ = 'vivekrai'
-__version__ = '1.0'
+__author__ = "vivekrai"
+__version__ = "1.1"
 
 import os
 import sys
 import tempfile
+import yaml
 from subprocess import call
 from time import sleep
 
 
-EDITOR = os.environ.get('EDITOR', 'vim')
+EDITOR = os.environ.get("EDITOR", "vim")
+
+
+def list_categories(til_path):
+    """ Given the directory of TIL notes, return the list of available
+    categories."""
+
+    return None
+
+
+def read_config(config, key=None):
+    """ Given the configuration file, return the til directory."""
+
+    if not exists(config):
+        return None
+
+    fp = os.path.expanduser(config)
+
+    options = yaml.load(open(fp, "r"))
+    if key:
+        return options.get(key, None)
+
+    return options
+
+
+def exists(path):
+    return os.path.exists(os.path.expanduser(path))
 
 
 def create_til_config(config_path):
     """ Create a `~/.config/til/til.conf` config file with location to the
-    appropriate today-i-learned directory.
-    """
+    appropriate today-i-learned directory. """
 
     config_path = os.path.expanduser(config_path)
 
-    if not os.path.exists(config_path):
+    if not read_config(config_path):
         til_path = input("Set save directory for your TIL notes? ")
-        while not os.path.exists(til_path):
+        while not exists(til_path):
             til_path = input("(error) Set save directory for your TIL notes? ")
+
         os.makedirs(os.path.dirname(config_path), exist_ok=True)
-        with open(config_path, 'w') as f:
-            f.write(til_path)
-            print("Created config file: {}".format(config_path))
 
-    with open(config_path, 'r') as f:
-        til_path = f.read().strip()
+        yaml.dump(
+            {"path": til_path},
+            open(config_path, "w"),
+            default_flow_style=False,
+            indent=4,
+        )
 
-    return til_path
+    return None
 
 
 def make_note(_cat, til_path):
@@ -54,13 +82,13 @@ def make_note(_cat, til_path):
     """
 
     _cat_p = os.path.join(til_path, _cat)
-    if not os.path.exists(_cat_p):
-        os.mkdir(_cat_p)
+    if not exists(_cat_p):
+        os.makedirs(_cat_p, exist_ok=True)
         print("Category created: til:{}/".format(_cat))
 
     tf = tempfile.NamedTemporaryFile(suffix=".tmp", delete=False)
 
-    tf.write(b'## ')
+    tf.write(b"## ")
     tf.close()
 
     # get pre and post edit file sizes to check if user has made
@@ -74,14 +102,14 @@ def make_note(_cat, til_path):
         sys.exit(0)
 
     # open file again to process title and note content
-    tf = open(tf.name, 'rb')
+    tf = open(tf.name, "rb")
     note = tf.read()
 
     tf.seek(0)
-    title = tf.readline().decode('utf8').strip('#').strip().lower()
-    title = '-'.join(title.split(' ')) + '.md'  # process title
+    title = tf.readline().decode("utf8").strip("#").strip().lower()
+    title = "-".join(title.split(" ")) + ".md"  # process title
 
-    with open(os.path.join(_cat_p, title), 'ab+') as f:
+    with open(os.path.join(_cat_p, title), "ab+") as f:
         f.write(note)
 
     tf.close()
@@ -93,27 +121,37 @@ def update_readme():
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description=
-            "til lets you quickly create today-i-learned notes. Use -h for more help.")
+    parser = argparse.ArgumentParser(
+        description="til lets you quickly create today-i-learned notes. Use -h for more help."
+    )
 
-    parser.add_argument('-c',
-                        help='type or category of post (default: unclassified)',
-                        default='unclassified')
-    parser.add_argument('-C', '--config',
-                        help='path to config file (default: ~/.config/til/til.conf)',
-                        default='~/.config/til/til.conf')
+    parser.add_argument(
+        "-c",
+        help="type or category of post (default: unclassified)",
+        default="unclassified",
+    )
+    parser.add_argument(
+        "-C",
+        "--config",
+        help="path to config file (default: ~/.config/til/til.conf)",
+        default="~/.config/til/til.conf",
+    )
 
     args = parser.parse_args()
+    create_til_config(args.config)
 
-    til_path = create_til_config(args.config)
+    til_path = read_config(args.config, 'path')
+    print(til_path)
 
-    if args.c == 'unclassified':
+    if args.c == "unclassified":
         print("til autosaves your note to categorized directories")
-        response = input("Since category is not set (use -c), save to `unclassified`? y/[n] ")
-        if response != 'y':
+        response = input(
+            "Since category is not set (use -c), save to `unclassified`? y/[n] "
+        )
+        if response != "y":
             args.c = input("Category: ")
 
     make_note(args.c, til_path)
