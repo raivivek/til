@@ -72,6 +72,7 @@ share with everyone but are too small for a full blog post.
 * [`pandas.get_dummies`: Vectorize category variables](./python/pandas-get-dummies.md)
 * [Care with `string.split()`](./python/care-with-string-split.md)
 * [Buffered vs Unbuffered I/O in Python](./python/unbuffered-output.md)
+* [Check if `STDIN` is `tty` or piped](./python/checking-if-STDIN-is-tty.md)
 
 ### Unclassified
 

@@ -106,10 +106,12 @@ def make_note(_cat, til_path):
     note = tf.read()
 
     tf.seek(0)
+    # TODO: Sanitize the title; remove ``
     title = tf.readline().decode("utf8").strip("#").strip().lower()
     title = "-".join(title.split(" ")) + ".md"  # process title
 
-    with open(os.path.join(_cat_p, title), "ab+") as f:
+    # TODO: Don't unlink file unless write is successful
+    with open(os.path.join(_cat_p, title), "wb+") as f:
         f.write(note)
 
     tf.close()
