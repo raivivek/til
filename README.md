@@ -15,7 +15,7 @@ share with everyone but are too small for a full blog post.
 * [Statistics | Methods | Math](#statistics--methods--math)
 * [Miscellaneous](#miscellaneous)
 * [Productivity](#productivity)
-* [Python (lang)](#python-(lang))
+* [Python (lang)](#python-lang)
 * [Unclassified](#unclassified)
 * [GNU Unix | Command line](#gnu-unix--command-line)
 * [Writing](#writing)
@@ -54,13 +54,14 @@ share with everyone but are too small for a full blog post.
 * [Using Zotero with WebDAV for file storage](./misc/zotero-webdav-setup.md)
 * [Pizza Effect](./misc/pizza-effect.md)
 * [Flash Asus TM-AC1900 to RT-AC68U](https://gist.github.com/raivivek/09b515420735a259091fc9e20d55dcb2)
+* [Using `cookiecutter` for project skeletons](./misc/cookiecutter-skeleton.md)
 
 ### Productivity
 * [Getting Research Idea I](./productivity/getting-research-idea-i.md)
 * [Quickly organizing ideas](./productivity/quickly-organizing-ideas.md)
 
 ### Python (lang)
-* [Itertools module](./python/itertools-module.md)
+* [`itertools` module](./python/itertools-module.md)
 * [ORMs and Database migration](./python/sql-orm.md)
 * [Records: SQL for Humans](./python/records-sql.md)
 * [pymust.watch](./python/pymust-watch.md)
@@ -73,8 +74,6 @@ share with everyone but are too small for a full blog post.
 * [Care with `string.split()`](./python/care-with-string-split.md)
 * [Buffered vs Unbuffered I/O in Python](./python/unbuffered-output.md)
 * [Check if `STDIN` is `tty` or piped](./python/checking-if-STDIN-is-tty.md)
-
-### Unclassified
 
 ### GNU Unix | Command line
 * [Fork a command to background](./unix/fork-to-bg.md)
