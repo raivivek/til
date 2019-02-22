@@ -26,7 +26,12 @@ def list_categories(til_path):
     """ Given the directory of TIL notes, return the list of available
     categories."""
 
-    return None
+    cats = [
+        x for x in os.listdir(til_path) 
+            if os.path.isdir(os.path.join(til_path, x)) and (not x.startswith('.'))
+    ]
+
+    return cats
 
 
 def read_config(config, key=None):
@@ -56,6 +61,7 @@ def create_til_config(config_path):
 
     if not read_config(config_path):
         til_path = input("Set save directory for your TIL notes? ")
+        til_path = os.path.expanduser(til_path)
         while not exists(til_path):
             til_path = input("(error) Set save directory for your TIL notes? ")
 
@@ -106,16 +112,22 @@ def make_note(_cat, til_path):
     note = tf.read()
 
     tf.seek(0)
-    # TODO: Sanitize the title; remove ``
+
     title = tf.readline().decode("utf8").strip("#").strip().lower()
+    title = title.replace('`', '') # Sanitize the title; remove ``
     title = "-".join(title.split(" ")) + ".md"  # process title
 
-    # TODO: Don't unlink file unless write is successful
-    with open(os.path.join(_cat_p, title), "wb+") as f:
-        f.write(note)
+    # Don't unlink file unless write is successful
+    try: 
+        with open(os.path.join(_cat_p, title), "wb+") as f:
+            f.write(note)
+        os.unlink(tf.name)
+    except:
+        print("Write not successful. File @ {}".format(os.path.join(_cat_p, title)))
 
     tf.close()
-    os.unlink(tf.name)
+
+    return None
 
 
 def update_readme():
@@ -146,14 +158,16 @@ if __name__ == "__main__":
     create_til_config(args.config)
 
     til_path = read_config(args.config, 'path')
-    print(til_path)
 
     if args.c == "unclassified":
-        print("til autosaves your note to categorized directories")
+        print("til will save your note to specified directory")
         response = input(
             "Since category is not set (use -c), save to `unclassified`? y/[n] "
         )
         if response != "y":
-            args.c = input("Category: ")
+            print("Existing categories:")
+            for x in list_categories(til_path):
+                print("- {x}".format(x = x))
+            args.c = input("Category (use names): ")
 
     make_note(args.c, til_path)
