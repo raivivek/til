@@ -1,12 +1,13 @@
 # KMP Algorithm
 
 Today I learned about the linear complexity string matching algorithm called the
-[KMP algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm). The algorithm, compared to its naive counterpart performs
-matching in at most `2n` comparisons where `n` is the length of the text string.
-However, this is possible with a pre-processing step which involves creating
-a *failure array* of the pattern to be matched.
+[KMP algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm).
+The algorithm, compared to its naive counterpart performs matching in at most
+`2n` comparisons where `n` is the length of the text string. However, this is
+possible with a pre-processing step which involves creating a *failure array*
+of the pattern to be matched.
 
-Here’s a Python snippet that creates a failure array of the pattern:
+Here is a Python snippet that creates a failure array of the pattern:
 
 ```
 def failure_array(rs):
@@ -21,7 +22,7 @@ def failure_array(rs):
         lsp.append(j)
     print(*lsp)
 
->>> failure_array(‘aabaac’)
+>>> failure_array("aabaac")
 0 1 0 1 2 0
 ```
 
