@@ -37,3 +37,7 @@ using this version of R, simply run `source activate mro_env` and `source
 deactivate` to deactivate.
 
 Happy hacking!
+
+**Edit (May 18, 2019)**
+
+I have been using MRO for a while now. Unless you are in urgent need of specific features offered by the MRO distribution, I would stick with the base R distributions. The primary reasons are that a) MRO does not catch up with latest R release as fast as I would expect, and b) it is difficult to get support in case of bugs.
