@@ -101,3 +101,12 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [Rhetorical Précis Format](writing/rhetorical-precis-format.md)
 * [Double Entry Journal](writing/double-entry-journal.md)
 
+---
+
+## Other TIL Collections
+* [Today I Learned by Hashrocket](https://til.hashrocket.com)
+* [jwworth/til](https://github.com/jwworth/til)
+* [thoughtbot/til](https://github.com/thoughtbot/til)
+
+## License
+© 2015-2020 Vivek Rai
