@@ -6,7 +6,7 @@ everyone but are too small for a full blog post.
 
 This README is auto-generated. Please edit `HEADER` to include any persistant information.
 
-**Count: 57**
+**Count: 58**
 
 ## Contents
 * [R (lang)](#r-(lang))
@@ -45,6 +45,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [Mount remote server locally on macOS](computing/mount-remote-server-locally-on-macos.md)
 * [SOAP-vs-REST stack](computing/SOAP-vs-REST.md)
 * [Snakemake on HPC](computing/snakemake-on-hpc.md)
+* [GitHub actions](computing/github-actions.md)
 * [Snakemake wildcard rules](computing/snakemake-wildcard-rules.md)
 * [Database comparison](computing/databases.md)
 
