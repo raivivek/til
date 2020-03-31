@@ -32,5 +32,6 @@ independent of the text to be matched.
 
 Using the information in the array, a fast match can be performed.
 
-See this [lecture](https://www.youtube.com/watch?v=EEjNb9yUv1k) for
-comprehensive detail.
+See this [lecture](https://www.youtube.com/watch?v=EEjNb9yUv1k) for comprehensive detail.
+  
+  #algorithms #string #pseudocode
