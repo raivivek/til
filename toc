@@ -14,9 +14,6 @@ from collections import defaultdict
 import operator
 
 
-with open('./HEADER', 'r') as f:
-    __header__ = f.read()
-
 __ignore = ['.git', '.pyc', '._DS_Store', '.github']
 __categories = {
         'misc': 'Miscellaneous',
@@ -104,4 +101,9 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    write_entries(args.root, args.output)
+    with open(os.path.join(args.root, 'HEADER'), 'r') as f:
+        __header__ = f.read()
+
+    __footer__ = ""
+
+    write_entries(args.root, args.output, header=__header__, footer=__footer__)
