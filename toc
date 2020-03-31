@@ -106,6 +106,7 @@ if __name__ == '__main__':
     with open(os.path.join(args.root, 'HEADER'), 'r') as f:
         __header__ = f.read()
 
-    __footer__ = ""
+    with open(os.path.join(args.root, 'FOOTER'), 'r') as f:
+        __footer__ = f.read()
 
     write_entries(args.root, args.output, header=__header__, footer=__footer__)
