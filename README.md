@@ -1,9 +1,3 @@
-# TIL (Today I Learned)
-
-A collection of small snippets that I learn day to day across a variety of tasks
-I am involved in. Often, they are curious and useful insights that I wish to
-share with everyone but are too small for a full blog post.
-
 **Count: 57**
 
 ## Contents
