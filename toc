@@ -55,11 +55,11 @@ def get_permalink(title):
     return '-'.join(fix_pipes.split(' '))
 
 
-def write_entries(root, output):
+def write_entries(root, output, header, footer):
     files = scan_files(root)
     out = []
 
-    out.append(__header__)
+    out.append(header)
     out.append("**Count: {}**\n\n".format(sum([len(x) for x in files.values()])))
 
     # write short-toc
@@ -81,6 +81,8 @@ def write_entries(root, output):
             out.append("* [{}]({})\n".format(get_title(path_), path_))
         out.append("\n")
 
+    # write footer
+    out.append(footer)
     output = sys.stdout if not output else open(output, 'w')
 
     with output as f:
