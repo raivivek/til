@@ -24,4 +24,11 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Generate README
-      run: python3 $GITHUB_WORKSPACE/toc -r $GITHUB_WORKSPACE > README.md && git add README.md && git commit -m "[hook] Update README"
+      run: python3 $GITHUB_WORKSPACE/toc -r $GITHUB_WORKSPACE > README.md
+      
+    - name: Git Auto Commit
+      uses: stefanzweifel/git-auto-commit-action@v4.1.1
+      with:
+        commit_message: '[gh-workflow] Update README'
+        commit_options: '--no-verify'
+        file_pattern: README.md
