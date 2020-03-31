@@ -24,4 +24,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Generate README
-      run: python3 $GITHUB_WORKSPACE/toc -h $GITHUB_WORKSPACE > README.md 
+      run: python3 $GITHUB_WORKSPACE/toc -r $GITHUB_WORKSPACE > README.md 
