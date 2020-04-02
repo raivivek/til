@@ -6,7 +6,7 @@ everyone but are too small for a full blog post.
 
 This README is auto-generated. Please edit `HEADER` to include any persistant information.
 
-**Count: 59**
+**Count: 60**
 
 ## Contents
 * [R (lang)](#r-(lang))
@@ -58,6 +58,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 ### Miscellaneous
 * [Choosing right Wifi channel](misc/choosing-wifi-channel.md)
 * [Fix Firefox auto DPI scaling](misc/fix-firefox-auto-dpi-scaling.md)
+* [COVID-19 and grociers](misc/covid-19-and-grociers.md)
 * [Email forwarding for your domain](misc/email-forwarding-for-your-domain.md)
 * [Setting up hostname in macOS](misc/setting-up-hostname-in-macos.md)
 * [Pizza Effect](misc/pizza-effect.md)
