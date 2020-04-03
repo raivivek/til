@@ -9,7 +9,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 **Count: 60**
 
 ## Table of Contents
-* [R (lang)](#r-(lang))
+* [R-lang](#r-lang)
 * [Algorithms](#algorithms)
 * [Biology](#biology)
 * [Computing](#computing)
@@ -21,7 +21,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [GNU Unix | Command line](#gnu-unix--command-line)
 * [Writing](#writing)
 
-### R (lang)
+### R-lang
 * [ggplot tricks](R/ggplot-tricks.md)
 * [Large datasets in `R`](R/r-large-data.md)
 * [Using conditionals (`if`-`else`) in data pipes](R/using-conditionals-(`if`-`else`)-in-data-pipes.md)
