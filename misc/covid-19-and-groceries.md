@@ -1,4 +1,4 @@
-## COVID-19 and grociers
+## COVID-19 and groceries
 
 The entire world is on lockdown to _flatten the curve_ and minimize infections due to
 COVID-19. Given the "stay at home" orders, it has been a little challenging and
