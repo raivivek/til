@@ -8,7 +8,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 
 **Count: 60**
 
-## Contents
+## Table of Contents
 * [R (lang)](#r-(lang))
 * [Algorithms](#algorithms)
 * [Biology](#biology)
