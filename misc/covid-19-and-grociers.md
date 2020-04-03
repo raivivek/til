@@ -1,13 +1,12 @@
 ## COVID-19 and grociers
 
 The entire world is on lockdown to _flatten the curve_ and minimize infections due to
-COVID-19 worldwide. Given the "stay at home" orders, it has been a little challenging and
-infact necessary to stay at home and come in physical contact with as few people as
-possible.
+COVID-19. Given the "stay at home" orders, it has been a little challenging and
+infact necessary to stay at home and minimize physical contact with people.
 
 One unfortunate side-effect of this is that getting groceries have been a little
 difficult. While delivery services such as InstaCart have been god-send, find a delivery
-slot due to immense slot has been incredibly tough.
+slot due to immense demand has been incredibly tough.
 
 I learned from reddit that the slots become available sparingly and most likely during
 early morning or midnight. So I thought, wait, can we automate the process of checking for
