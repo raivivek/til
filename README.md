@@ -6,7 +6,7 @@ everyone but are too short for a full blog post.
 
 This README is auto-generated. Please edit `HEADER` to include any persistant information.
 
-**Count: 60**
+**Count: 61**
 
 ## Table of Contents
 * [R-lang](#r-lang)
@@ -48,6 +48,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [GitHub actions](computing/github-actions.md)
 * [Snakemake wildcard rules](computing/snakemake-wildcard-rules.md)
 * [Database comparison](computing/databases.md)
+* [Automount + SSHFS on macOS](computing/automount-+-sshfs-on-macos.md)
 
 ### Zen lessons
 * [The value of being slow](lessons/the-value-of-being-slow.md)
