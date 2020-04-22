@@ -6,7 +6,7 @@ everyone but are too short for a full blog post.
 
 This README is auto-generated. Please edit `HEADER` to include any persistant information.
 
-**Count: 61**
+**Count: 63**
 
 ## Table of Contents
 * [R-lang](#r-lang)
@@ -22,33 +22,35 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [Writing](#writing)
 
 ### R-lang
-* [ggplot tricks](R/ggplot-tricks.md)
-* [Large datasets in `R`](R/r-large-data.md)
-* [Using conditionals (`if`-`else`) in data pipes](R/using-conditionals-(`if`-`else`)-in-data-pipes.md)
-* [Bin-or-discretize numeric data (ggplot)](R/bin-or-discretize-numeric-data-(ggplot).md)
-* [knitr: Put code as appendix](R/knitr:-put-code-as-appendix.md)
 * [Modifying `ggplot2` objects after creation](R/modifying-ggplot2-objects-after-creation.md)
+* [Large datasets in `R`](R/r-large-data.md)
+* [Evaluating string as an expression](R/evaluating-string-as-expression.md)
+* [ggplot tricks](R/ggplot-tricks.md)
+* [knitr: Put code as appendix](R/knitr:-put-code-as-appendix.md)
+* [Restarting your R Studio server session](R/restarting-your-r-studio-server-session.md)
+* [Using conditionals (`if`-`else`) in data pipes](R/using-conditionals-(`if`-`else`)-in-data-pipes.md)
 * [Using Microsoft R Open 3.5.X](R/using-microsoft-r-open-3.5.x.md)
+* [Bin-or-discretize numeric data (ggplot)](R/bin-or-discretize-numeric-data-(ggplot).md)
 
 ### Algorithms
-* [KMP Algorithm](algorithms/kmp-matcher.md)
 * [Newick Tree Format](algorithms/newick-tree-format.md)
+* [KMP Algorithm](algorithms/kmp-matcher.md)
 
 ### Biology
-* ['Thrifty' gene hypothesis](biology/'thrifty'-gene-hypothesis.md)
-* [The Omnigenic Model](biology/the-omnigenic-model.md)
 * [Pedigree Collapse](biology/pedigree-collapse.md)
+* [The Omnigenic Model](biology/the-omnigenic-model.md)
+* ['Thrifty' gene hypothesis](biology/'thrifty'-gene-hypothesis.md)
 
 ### Computing
 * [Editing remote files](computing/editing-remote-file.md)
-* [`pkg-config` for managing compilation](computing/pkg-config-for-compilation.md)
-* [Mount remote server locally on macOS](computing/mount-remote-server-locally-on-macos.md)
-* [SOAP-vs-REST stack](computing/SOAP-vs-REST.md)
-* [Snakemake on HPC](computing/snakemake-on-hpc.md)
-* [GitHub actions](computing/github-actions.md)
 * [Snakemake wildcard rules](computing/snakemake-wildcard-rules.md)
-* [Database comparison](computing/databases.md)
 * [Automount + SSHFS on macOS](computing/automount-+-sshfs-on-macos.md)
+* [Mount remote server locally on macOS](computing/mount-remote-server-locally-on-macos.md)
+* [Snakemake on HPC](computing/snakemake-on-hpc.md)
+* [`pkg-config` for managing compilation](computing/pkg-config-for-compilation.md)
+* [GitHub actions](computing/github-actions.md)
+* [Database comparison](computing/databases.md)
+* [SOAP-vs-REST stack](computing/SOAP-vs-REST.md)
 
 ### Zen lessons
 * [The value of being slow](lessons/the-value-of-being-slow.md)
@@ -57,52 +59,52 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [Permutation testing](math/permutation-testing.md)
 
 ### Miscellaneous
-* [Choosing right Wifi channel](misc/choosing-wifi-channel.md)
 * [Fix Firefox auto DPI scaling](misc/fix-firefox-auto-dpi-scaling.md)
-* [COVID-19 and groceries](misc/covid-19-and-groceries.md)
 * [Email forwarding for your domain](misc/email-forwarding-for-your-domain.md)
-* [Setting up hostname in macOS](misc/setting-up-hostname-in-macos.md)
-* [Pizza Effect](misc/pizza-effect.md)
-* [Using `cookiecutter` to generate project skeleton](misc/cookiecutter-skeleton.md)
-* [Using Zotero with WebDAV for file storage](misc/zotero-webdav-setup.md)
 * [HMMER](misc/hmmer.md)
 * [Banzhaf Power Index](misc/banzhaf-index.md)
+* [Using `cookiecutter` to generate project skeleton](misc/cookiecutter-skeleton.md)
+* [Setting up hostname in macOS](misc/setting-up-hostname-in-macos.md)
+* [Pizza Effect](misc/pizza-effect.md)
+* [Using Zotero with WebDAV for file storage](misc/zotero-webdav-setup.md)
+* [Choosing right Wifi channel](misc/choosing-wifi-channel.md)
+* [COVID-19 and groceries](misc/covid-19-and-groceries.md)
 
 ### Productivity
-* [Quickly organizing ideas](productivity/quickly-organizing-ideas.md)
-* [Getting Research Idea I](productivity/getting-research-idea-i.md)
 * [Batch import into Zotero](productivity/batch-import-into-zotero.md)
 * [Keeping notes for long time](productivity/keeping-notes-for-long-time.md)
+* [Getting Research Idea I](productivity/getting-research-idea-i.md)
+* [Quickly organizing ideas](productivity/quickly-organizing-ideas.md)
 
 ### Python (lang)
-* [Writing unbuffered output](python/unbuffered-output.md)
-* [Writing Conda Recipes](python/conda-recipes.md)
-* [`pandas.get_dummies`: Vectorize category variables](python/pandas-get-dummies.md)
-* [ORMs and Database migration](python/sql-orm.md)
 * [`contextlib` module](python/contextlib-with.md)
-* [Check if `STDIN` is `tty`](python/checking-if-STDIN-is-tty.md)
-* [Records: SQL for Humans](python/records-sql.md)
-* [Super considered super!](python/super-talk.md)
-* [Don't use `f.readlines()`](python/dont-use-readlines.md)
-* [Itertools module](python/itertools-module.md)
-* [Care with `string.split()`](python/care-with-string-split.md)
-* [pymust.watch](python/pymust-watch.md)
 * [`multiprocessing` module in Python](python/optimize-pandas-mp.md)
+* [pymust.watch](python/pymust-watch.md)
+* [Itertools module](python/itertools-module.md)
+* [Writing Conda Recipes](python/conda-recipes.md)
+* [Check if `STDIN` is `tty`](python/checking-if-STDIN-is-tty.md)
+* [ORMs and Database migration](python/sql-orm.md)
+* [Super considered super!](python/super-talk.md)
+* [`pandas.get_dummies`: Vectorize category variables](python/pandas-get-dummies.md)
+* [Care with `string.split()`](python/care-with-string-split.md)
+* [Records: SQL for Humans](python/records-sql.md)
+* [Don't use `f.readlines()`](python/dont-use-readlines.md)
+* [Writing unbuffered output](python/unbuffered-output.md)
 
 ### GNU Unix | Command line
-* [GNU sort has a '-u' option to output only unique values for the  columns used for sorting](unix/sort-and-deduplicate-on-specific-columns.md)
-* [Concatenate files with same header](unix/concatenate-files-with-same-header.md)
-* [OOM Killer](unix/oom-killer.md)
 * [Changing priority of running programs](unix/ionicing-programs.md)
-* [Watch LaTeX file and autocompile](unix/watch-compile-latex.md)
+* [Concatenate files with same header](unix/concatenate-files-with-same-header.md)
+* [GNU sort has a '-u' option to output only unique values for the  columns used for sorting](unix/sort-and-deduplicate-on-specific-columns.md)
 * [Fetch random lines from file](unix/random-lines.md)
-* [Run a command for some time](unix/timeout.md)
 * [Fork a command to background](unix/fork-to-bg.md)
+* [Run a command for some time](unix/timeout.md)
+* [OOM Killer](unix/oom-killer.md)
+* [Watch LaTeX file and autocompile](unix/watch-compile-latex.md)
 
 ### Writing
 * [Headlines and the Inverted Pyramid](writing/inverted-pyramid.md)
-* [Rhetorical Précis Format](writing/rhetorical-precis-format.md)
 * [Double Entry Journal](writing/double-entry-journal.md)
+* [Rhetorical Précis Format](writing/rhetorical-precis-format.md)
 
 ---
 
