@@ -3,7 +3,7 @@ importScripts('string_score.min.js');
 var data;
 var DEBUG = false;
 
-var fields = ['Department', 'Semester', 'Paper', 'Year'];
+var fields = ['Category', 'TIL'];
 
 onmessage = function(e) {
     if (e.data.type === 'data') {
@@ -18,10 +18,12 @@ onmessage = function(e) {
         var query = e.data.query;
         query = query.toLowerCase();
         var terms = query.split(/\s+/);
-        var fuzz = 0.3;
+        console.log(terms);
+        var fuzz = 0.5;
         console.log('got query: ', query);
         for (var j = 0; j < data.length; ++j) {
-            data[j].score = {'Department': 0, 'Semester': 0, 'Paper': 0, 'Year': 0, 'total': 1};
+            data[j].score = {'Category': 0, 'TIL': 0};
+            data[j].score.total = 0;
             for (var t = 0; t < terms.length; ++t) {
                 var maxTermScore = 0, maxField;
                 for (var f = 0; f < fields.length; ++f) {
@@ -34,14 +36,14 @@ onmessage = function(e) {
                 data[j].score[fields[maxField]] += maxTermScore;
             }
             for (var f = 0; f < fields.length; ++f) {
-                data[j].score.total += Math.pow(Math.max(data[j].score[fields[f]], 0.2) - 0.2, 1);
+                data[j].score.total += Math.pow(data[j].score[fields[f]] + 1, 2);
             }
         }
         data.sort(function(a, b) {
             return b.score.total - a.score.total;
         });
         var results = data.slice(0, 40);
-        console.log('results: ', results);
+        console.log('tils: ', results);
         postMessage(results);
     }
 };

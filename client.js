@@ -28,6 +28,7 @@ var addItem = function(item) {
 };
 
 $(function() {
+  const data_uri_root = "https://github.com/raivivek/til/blob/master/";
   $('#query').focus();
 
   // populate the left side localStorage list
@@ -48,6 +49,7 @@ $(function() {
   $.getJSON('data/data.json')
     .success(function(json) {
       worker.postMessage({ type: 'data', data: json });
+      $('#query').attr('placeholder', json.length + " tils and counting...");
       var search_query = $.url('?') && $.url('?').search;
       if (search_query) {
         while (search_query[search_query.length - 1] == '/') {
@@ -67,9 +69,9 @@ $(function() {
     e.preventDefault();
   });
 
-  worker.onmessage = function(results) {
+  worker.onmessage = function(tils) {
     processing = false;
-    displayResults(results.data);
+    displaytils(tils.data);
     if (nextQuery !== null) {
       var query = nextQuery;
       nextQuery = null;
@@ -77,37 +79,39 @@ $(function() {
     }
   };
 
-  function displayResults(results) {
+  function displaytils(tils) {
     var html = '';
     for (var i = 0; i < 20; ++i) {
       html +=
-        '<li><a target="_blank" class="result-link" href="' +
-        results[i].Link +
-        '"> <div class="info">' +
-        results[i].Year +
-        ' &#8226; ' +
-        results[i].Department +
-        ' &#8226; ' +
-        results[i].Semester +
-        ' </div> <h1>' +
-        results[i].Paper +
-        '</h1></a><li>';
+        '<li><div class="til-div"><a target="_blank" class="category" href="' +
+        data_uri_root + "/" +
+        tils[i].Category.toLowerCase() +
+        '">' + 
+        tils[i].Category.toLowerCase() + "/" +
+        "</a>" +
+        '<a href="' +
+        data_uri_root + "/" +
+        tils[i].Category.toLowerCase() + "/" +
+        tils[i].TIL +
+        '">' +
+        tils[i].TIL.toLowerCase() +
+        '</a>' +
+        ' </div> <li>';
     }
-    $('.result-list').html(html);
+    $('.til-list').html(html);
     /**
-     * Bind a handler to a click on the result link to save the search in local storage
+     * Bind a handler to a click on the til link to save the search in local storage
      *
-     * Sample result HTML:
-     * <a class="result-link">
+     * Sample til HTML:
+     * <a class="til-link">
      *    <div> ... </div>
      *    <h1> ... </h1>
      * </a>
      */
-    $("a.result-link").click(function(e) {
+    $("a.til-link").click(function(e) {
       var query = $('#query').val().trim();
       addItem(query);
       $('div.local-storage-div').show();
-      ga('send', 'event', 'Result', 'click', query);
     });
   }
 
@@ -118,7 +122,7 @@ $(function() {
       .val()
       .trim();
     if (query === '') {
-      $('.result-list').html('');
+      $('.til-list').html('');
       $('.ratings').removeClass('hidden');
       $('.mobile-view').removeClass('hidden');
       return;
