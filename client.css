@@ -19,10 +19,10 @@ body {
 }
 
 input {
-  font-size: 3em;
-  font-family: Roboto, Titillium, Inconsolata, sans-serif;
-  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5em;
   line-height: 1.5em;
+  width: 100%;
   display: inline-block;
   padding: 1em 2em;
 }
@@ -49,7 +49,7 @@ input[type]:focus,
 }
 
 .til-list {
-  font-size: 1em;
+  font-size: 1.25em;
   font-family: 'Courier New', Courier, monospace;
   padding: 0;
   list-style: none;
