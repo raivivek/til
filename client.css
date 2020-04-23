@@ -57,38 +57,48 @@ input[type]:focus,
 }
 .til-div {
   text-align: center;
+  display: inline-flex;
 }
+
 .til-div li {
   margin: 1em;
 }
+
 .til-div h1 {
   font-size: 1.5rem;
   margin: 0 0 1em;
 }
+
 .til-div a {
   text-decoration: none;
   display: block;
   color: #333333;
 }
+
 .til-div a:hover {
   color: #0049d7;
   text-decoration: underline;
 }
+
 .til-div a:focus,
 .til-div a:active {
   color: #000000;
 }
+
 .til-div a:visited {
   color: #6b389b;
 }
+
 .hidden {
   display: none;
 }
+
 .ratings {
   text-align: center;
   width: 50vw;
   padding: 2rem;
 }
+
 .sidebar {
   background: #f0f0f0;
   display: block;
@@ -119,7 +129,7 @@ input[type]:focus,
 
 @media only screen and (max-width: 999px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
   .sidebar {
     display: none;
