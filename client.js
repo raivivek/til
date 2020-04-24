@@ -58,6 +58,8 @@ $(function() {
         }
         $('#query').val(search_query);
         search();
+      } else {
+        search();
       }
     })
     .error(function(jqxhr, status, err) {
@@ -80,7 +82,7 @@ $(function() {
     }
   };
 
-  function displaytils(tils) {
+  function til_to_html(tils) {
     var html = '';
     for (var i = 0; i < 20; ++i) {
       html +=
@@ -99,7 +101,11 @@ $(function() {
         '</a>' +
         ' </div> <li>';
     }
-    $('.til-list').html(html);
+    return html;
+  }
+
+  function displaytils(tils) {
+    $('.til-list').html(til_to_html(tils));
     /**
      * Bind a handler to a click on the til link to save the search in local storage
      *
@@ -117,17 +123,9 @@ $(function() {
   }
 
   var search = _.debounce(function() {
-    $('.ratings').addClass('hidden');
-    $('.mobile-view').addClass('hidden');
     var query = $('#query')
       .val()
       .trim();
-    if (query === '') {
-      $('.til-list').html('');
-      $('.ratings').removeClass('hidden');
-      $('.mobile-view').removeClass('hidden');
-      return;
-    }
     if (processing) {
       nextQuery = query;
       return;
