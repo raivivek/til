@@ -29,6 +29,7 @@ var addItem = function(item) {
 
 $(function() {
   const data_uri_root = "https://github.com/raivivek/til/blob/master/";
+  const category_uri_root = "https://github.com/raivivek/til/tree/master/";
   $('#query').focus();
 
   // populate the left side localStorage list
@@ -84,8 +85,8 @@ $(function() {
     for (var i = 0; i < 20; ++i) {
       html +=
         '<li><div class="til-div"><a target="_blank" class="category" href="' +
-        data_uri_root + "/" +
-        tils[i].Category.toLowerCase() +
+        category_uri_root + "/" +
+        tils[i].Category +
         '">' + 
         tils[i].Category.toLowerCase() + "/" +
         "</a>" +
