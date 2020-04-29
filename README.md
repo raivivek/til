@@ -6,7 +6,7 @@ everyone but are too short for a full blog post.
 
 This README is auto-generated. Please edit `HEADER` to include any persistant information.
 
-**Count: 63**
+**Count: 65**
 
 ## Table of Contents
 * [R-lang](#r-lang)
@@ -74,6 +74,8 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [Batch import into Zotero](productivity/batch-import-into-zotero.md)
 * [Keeping notes for long time](productivity/keeping-notes-for-long-time.md)
 * [Getting Research Idea I](productivity/getting-research-idea-i.md)
+* [Using Hammerspoon on macOS for quick tasks](productivity/using-hammerspoon-on-macos-for-quick-tasks.md)
+* [Using Asana for project management](productivity/using-asana-for-project-management.md)
 * [Quickly organizing ideas](productivity/quickly-organizing-ideas.md)
 
 ### Python (lang)
