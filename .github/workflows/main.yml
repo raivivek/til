@@ -32,4 +32,4 @@ jobs:
       with:
         commit_message: '[gh-workflow] Update README'
         commit_options: '--no-verify'
-        file_pattern: README.md
+        file_pattern: README.md data.json
