@@ -28,8 +28,8 @@ jobs:
            python3 $GITHUB_WORKSPACE/toc --fmt json -r $GITHUB_WORKSPACE > data.json
 
     - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v4.1.1
+      uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
         commit_message: '[gh-workflow] Update README'
         commit_options: '--no-verify'
-        file_pattern: README.md data.json
+        file_pattern: *.md *.json
