@@ -19,13 +19,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Runs a single command using the runners shell
+    
     - name: Generate README
-      run: python3 $GITHUB_WORKSPACE/toc --fmt readme -r $GITHUB_WORKSPACE > README.md;
-           python3 $GITHUB_WORKSPACE/toc --fmt json -r $GITHUB_WORKSPACE > data.json
+      run: python3 $GITHUB_WORKSPACE/toc --fmt readme -r $GITHUB_WORKSPACE > README.md
+    - name: Generate data.json
+      run: python3 $GITHUB_WORKSPACE/toc --fmt json -r $GITHUB_WORKSPACE > data.json
 
     - name: Git Auto Commit
       uses: stefanzweifel/git-auto-commit-action@v4.1.6
