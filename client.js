@@ -47,7 +47,7 @@ $(function() {
   }
 
   var worker = new Worker('resources/scripts/worker2.js');
-  $.getJSON('data/data.json')
+  $.getJSON('https://raw.githubusercontent.com/raivivek/til/master/data.json')
     .success(function(json) {
       worker.postMessage({ type: 'data', data: json });
       $('#query').attr('placeholder', json.length + " tils and counting...");
