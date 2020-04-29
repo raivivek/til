@@ -12,30 +12,31 @@ import argparse
 import sys
 from collections import defaultdict
 import operator
+import json
 
 
-__ignore = ['.git', '.pyc', '._DS_Store', '.github']
+__ignore = ['.git', '.pyc', '._DS_Store', '.github', '.files']
 __categories = {
-        'misc': 'Miscellaneous',
-        'python': 'Python (lang)',
-        'R': 'R-lang',
-        'unix': 'GNU Unix | Command line',
-        'algorithms': 'Algorithms',
-        'productivity': 'Productivity',
-        'computing': 'Computing',
-        'writing': 'Writing',
-        'math': 'Statistics | Methods | Math',
-        'biology': 'Biology',
-        'lessons': 'Zen lessons',
-        'unclassified': 'Unclassified'
-        }
+    'misc': 'Miscellaneous',
+    'python': 'Python (lang)',
+    'R': 'R-lang',
+    'unix': 'GNU Unix | Command line',
+    'algorithms': 'Algorithms',
+    'productivity': 'Productivity',
+    'computing': 'Computing',
+    'writing': 'Writing',
+    'math': 'Statistics | Methods | Math',
+    'biology': 'Biology',
+    'lessons': 'Zen lessons',
+    'unclassified': 'Unclassified'
+}
 
 
 def scan_files(path):
     tree = defaultdict(list)
     for root, dirs, files in os.walk(path,  followlinks=True):
         root = os.path.basename(root)
-        if root in __ignore or root.startswith('.'):  # ignore blacklist
+        if root in __ignore or (root.startswith('.') and path != '.'):  # ignore blacklist
             dirs[:], files[:] = [], []
         elif root == '' or root == os.path.basename(path):  # skip root
             continue
@@ -53,6 +54,15 @@ def get_title(filepath):
 def get_permalink(title):
     fix_pipes = '--'.join([x.strip() for x in title.lower().split('|')])
     return '-'.join(fix_pipes.split(' '))
+
+
+def write_json(root):
+    files = scan_files(root)
+    out = []
+    for k, v in files.items():
+        for md in v:
+            out.append({ "Category": k, "TIL": md })
+    print(json.dumps(out, indent=4))
 
 
 def write_entries(root, output, header, footer):
@@ -98,15 +108,28 @@ if __name__ == '__main__':
                         help="Root directory to scan for files",
                         default='.')
 
+    parser.add_argument('-f', '--fmt',
+            help="Output format",
+            default='json')
+
     parser.add_argument('-o', '--output',
                         help="Output file (default: stdout)")
 
     args = parser.parse_args()
 
-    with open(os.path.join(args.root, 'HEADER'), 'r') as f:
-        __header__ = f.read()
 
-    with open(os.path.join(args.root, 'FOOTER'), 'r') as f:
-        __footer__ = f.read()
+    if (args.fmt == "json"):
+        write_json(args.root)
+    else:
+        header_path = os.path.join(args.root, 'HEADER')
+        footer_path = os.path.join(args.root, 'FOOTER')
+        __header, __footer = '', ''
+        if os.path.exists(header_path):
+            with open(os.path.join(args.root, 'HEADER'), 'r') as f:
+                __header = f.read()
 
-    write_entries(args.root, args.output, header=__header__, footer=__footer__)
+        if os.path.exists(footer_path):
+            with open(os.path.join(args.root, 'FOOTER'), 'r') as f:
+                __footer = f.read()
+
+        write_entries(args.root, args.output, header=__header, footer=__footer)
