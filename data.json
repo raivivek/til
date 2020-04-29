@@ -1,97 +1,5 @@
 [
     {
-        "Category": "misc",
-        "TIL": "setting-up-hostname-in-macos.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "banzhaf-index.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "covid-19-and-groceries.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "email-forwarding-for-your-domain.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "hmmer.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "choosing-wifi-channel.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "zotero-webdav-setup.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "fix-firefox-auto-dpi-scaling.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "cookiecutter-skeleton.md"
-    },
-    {
-        "Category": "misc",
-        "TIL": "pizza-effect.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "itertools-module.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "sql-orm.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "care-with-string-split.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "records-sql.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "unbuffered-output.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "pymust-watch.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "dont-use-readlines.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "checking-if-STDIN-is-tty.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "super-talk.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "conda-recipes.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "contextlib-with.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "optimize-pandas-mp.md"
-    },
-    {
-        "Category": "python",
-        "TIL": "pandas-get-dummies.md"
-    },
-    {
         "Category": "algorithms",
         "TIL": "newick-tree-format.md"
     },
@@ -101,11 +9,7 @@
     },
     {
         "Category": "R",
-        "TIL": "knitr:-put-code-as-appendix.md"
-    },
-    {
-        "Category": "R",
-        "TIL": "using-conditionals-(`if`-`else`)-in-data-pipes.md"
+        "TIL": "modifying-ggplot2-objects-after-creation.md"
     },
     {
         "Category": "R",
@@ -117,15 +21,11 @@
     },
     {
         "Category": "R",
-        "TIL": "using-microsoft-r-open-3.5.x.md"
-    },
-    {
-        "Category": "R",
-        "TIL": "bin-or-discretize-numeric-data-(ggplot).md"
-    },
-    {
-        "Category": "R",
         "TIL": "ggplot-tricks.md"
+    },
+    {
+        "Category": "R",
+        "TIL": "knitr:-put-code-as-appendix.md"
     },
     {
         "Category": "R",
@@ -133,87 +33,19 @@
     },
     {
         "Category": "R",
-        "TIL": "modifying-ggplot2-objects-after-creation.md"
+        "TIL": "using-conditionals-(`if`-`else`)-in-data-pipes.md"
     },
     {
-        "Category": "unclassified",
-        "TIL": "first-party-isolate.md"
+        "Category": "R",
+        "TIL": "using-microsoft-r-open-3.5.x.md"
+    },
+    {
+        "Category": "R",
+        "TIL": "bin-or-discretize-numeric-data-(ggplot).md"
     },
     {
         "Category": "math",
         "TIL": "permutation-testing.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "fork-to-bg.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "random-lines.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "concatenate-files-with-same-header.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "watch-compile-latex.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "ionicing-programs.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "oom-killer.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "sort-and-deduplicate-on-specific-columns.md"
-    },
-    {
-        "Category": "unix",
-        "TIL": "timeout.md"
-    },
-    {
-        "Category": "lessons",
-        "TIL": "the-value-of-being-slow.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "snakemake-on-hpc.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "automount-+-sshfs-on-macos.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "SOAP-vs-REST.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "pkg-config-for-compilation.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "snakemake-wildcard-rules.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "databases.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "mount-remote-server-locally-on-macos.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "editing-remote-file.md"
-    },
-    {
-        "Category": "computing",
-        "TIL": "github-actions.md"
     },
     {
         "Category": "biology",
@@ -229,6 +61,18 @@
     },
     {
         "Category": "productivity",
+        "TIL": "batch-import-into-zotero.md"
+    },
+    {
+        "Category": "productivity",
+        "TIL": "keeping-notes-for-long-time.md"
+    },
+    {
+        "Category": "productivity",
+        "TIL": "getting-research-idea-i.md"
+    },
+    {
+        "Category": "productivity",
         "TIL": "using-hammerspoon-on-macos-for-quick-tasks.md"
     },
     {
@@ -237,19 +81,7 @@
     },
     {
         "Category": "productivity",
-        "TIL": "getting-research-idea-i.md"
-    },
-    {
-        "Category": "productivity",
-        "TIL": "batch-import-into-zotero.md"
-    },
-    {
-        "Category": "productivity",
         "TIL": "quickly-organizing-ideas.md"
-    },
-    {
-        "Category": "productivity",
-        "TIL": "keeping-notes-for-long-time.md"
     },
     {
         "Category": "writing",
@@ -262,5 +94,169 @@
     {
         "Category": "writing",
         "TIL": "rhetorical-precis-format.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "ionicing-programs.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "concatenate-files-with-same-header.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "sort-and-deduplicate-on-specific-columns.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "random-lines.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "fork-to-bg.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "timeout.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "oom-killer.md"
+    },
+    {
+        "Category": "unix",
+        "TIL": "watch-compile-latex.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "contextlib-with.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "optimize-pandas-mp.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "pymust-watch.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "itertools-module.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "conda-recipes.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "checking-if-STDIN-is-tty.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "sql-orm.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "super-talk.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "pandas-get-dummies.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "care-with-string-split.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "records-sql.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "dont-use-readlines.md"
+    },
+    {
+        "Category": "python",
+        "TIL": "unbuffered-output.md"
+    },
+    {
+        "Category": "lessons",
+        "TIL": "the-value-of-being-slow.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "editing-remote-file.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "snakemake-wildcard-rules.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "automount-+-sshfs-on-macos.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "mount-remote-server-locally-on-macos.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "snakemake-on-hpc.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "pkg-config-for-compilation.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "github-actions.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "databases.md"
+    },
+    {
+        "Category": "computing",
+        "TIL": "SOAP-vs-REST.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "fix-firefox-auto-dpi-scaling.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "email-forwarding-for-your-domain.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "hmmer.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "banzhaf-index.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "cookiecutter-skeleton.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "setting-up-hostname-in-macos.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "pizza-effect.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "zotero-webdav-setup.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "choosing-wifi-channel.md"
+    },
+    {
+        "Category": "misc",
+        "TIL": "covid-19-and-groceries.md"
     }
 ]
