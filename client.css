@@ -1,8 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue,
     Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
-
-  word-wrap: break-word;
+  /*word-wrap: break-word;*/
   margin: 0;
   min-height: 100vh;
   font-size: 20px;
@@ -10,14 +9,15 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  width: 70vw;
+  margin: 0 15vw;
 }
 
 .search {
-  width: 70vw;
-  margin: 5em 5em 0;
+  margin: 2em 5em 0;
 }
-
 input {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2.5em;
@@ -55,23 +55,13 @@ input[type]:focus,
   list-style: none;
   text-align: left;
 }
-.til-div {
-  text-align: center;
-  display: inline-flex;
-}
 
 .til-div li {
   margin: 1em;
 }
 
-.til-div h1 {
-  font-size: 1.5rem;
-  margin: 0 0 1em;
-}
-
 .til-div a {
   text-decoration: none;
-  display: block;
   color: #333333;
 }
 
@@ -93,35 +83,17 @@ input[type]:focus,
   display: none;
 }
 
-.ratings {
-  text-align: center;
-  width: 50vw;
-  padding: 2rem;
-}
-
 .sidebar {
   background: #f0f0f0;
-  display: block;
-  padding: 1em 2em 0;
-  position: sticky;
+  padding: 1em 1em;
   min-height: 100%;
-}
-
-.sidebar h1,
-.mobile-view h1 {
-  font-size: 5rem;
-  margin-bottom: -1rem;
-}
-
-.local-storage-list {
-  max-height: inherit;
-  list-style: none;
 }
 
 @media only screen and (max-width: 1599px) {
   .search {
     margin: 2em 2em 0;
   }
+
   .sidebar h1 {
     margin-top: 2rem;
   }
@@ -131,25 +103,10 @@ input[type]:focus,
   body {
     font-size: 16px;
   }
-  .sidebar {
-    display: none;
-  }
 
-  .mobile-view {
-    display: block;
-  }
-
-  .mobile-view.hidden {
-    display: none;
-  }
-
-  .ratings {
-    display: none;
-  }
-
-  .search {
-    margin: 4em 1em 0;
-    width: calc(100% - 2em);
+  .container {
+    width: 100vw;
+    margin: 0;
   }
 
   .query-div input,
@@ -161,15 +118,5 @@ input[type]:focus,
   .til-div h1 {
     font-size: 1.2rem;
     margin: 0 0 1em;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .sidebar {
-    display: block;
-  }
-
-  .mobile-view {
-    display: none;
   }
 }

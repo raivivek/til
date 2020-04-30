@@ -6,45 +6,10 @@ var DEBUG = false;
 var searchQuery = '';
 var pageURL = $(location).attr('href');
 
-var addItem = function(item) {
-  item = item.toLowerCase();
-  var searchbase = localStorage.getItem('searched');
-  if (searchbase) {
-    searchbase = searchbase.replace(',' + item + ',', ',');
-    searchbase = ',' + item + searchbase;
-    localStorage.setItem('searched', searchbase);
-  } else {
-    localStorage.setItem('searched', ',' + item + ',');
-  }
-
-  $("ul.local-storage-list > li > a:contains('" + item + "')").each(function() {
-    if ($(this).text() === item) {
-      $(this).parent().remove();
-    }
-  });
-  $('ul.local-storage-list').prepend(
-    "<li><a href='' style='text-align: center'>" + item + '</a><br></li>'
-  );
-};
-
 $(function() {
   const data_uri_root = "https://github.com/raivivek/til/blob/master/";
   const category_uri_root = "https://github.com/raivivek/til/tree/master/";
   $('#query').focus();
-
-  // populate the left side localStorage list
-  // if the localStorage exists, else hide div
-  if (localStorage.getItem('searched')) {
-    var history = localStorage.getItem('searched');
-    $.each(history.split(','), function(index, item) {
-      if (item != '') {
-        $('ul.local-storage-list').append(
-          "<li><a href='' style='text-align: center'>" + item + '</a><br></li>'
-        );
-      }
-    });
-    $('ul.local-storage-list').append('<br/><br/>');
-  }
 
   var worker = new Worker('resources/scripts/worker2.js');
   $.getJSON('https://raw.githubusercontent.com/raivivek/til/master/data.json')
@@ -66,12 +31,6 @@ $(function() {
       if (DEBUG) console.log(jqxhr, status, err);
     });
 
-  $('ul.local-storage-list li a').click(function(e) {
-    $('#query').val($(this).text());
-    search();
-    e.preventDefault();
-  });
-
   worker.onmessage = function(tils) {
     processing = false;
     displaytils(tils.data);
@@ -87,14 +46,11 @@ $(function() {
     for (var i = 0; i < 20; ++i) {
       html +=
         '<li><div class="til-div"><a target="_blank" class="category" href="' +
-        category_uri_root + "/" +
-        tils[i].Category +
+        category_uri_root + tils[i].Category +
         '">' + 
-        tils[i].Category.toLowerCase() + "/" +
-        "</a>" +
+        tils[i].Category.toLowerCase() + "</a>/" +
         '<a href="' +
-        data_uri_root + "/" +
-        tils[i].Category.toLowerCase() + "/" +
+        data_uri_root + tils[i].Category.toLowerCase() + "/" +
         tils[i].TIL +
         '">' +
         tils[i].TIL.toLowerCase() +
@@ -106,20 +62,6 @@ $(function() {
 
   function displaytils(tils) {
     $('.til-list').html(til_to_html(tils));
-    /**
-     * Bind a handler to a click on the til link to save the search in local storage
-     *
-     * Sample til HTML:
-     * <a class="til-link">
-     *    <div> ... </div>
-     *    <h1> ... </h1>
-     * </a>
-     */
-    $("a.til-link").click(function(e) {
-      var query = $('#query').val().trim();
-      addItem(query);
-      $('div.local-storage-div').show();
-    });
   }
 
   var search = _.debounce(function() {
