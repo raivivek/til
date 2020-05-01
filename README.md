@@ -6,7 +6,7 @@ everyone but are too short for a full blog post.
 
 This README is auto-generated. Please edit `HEADER` to include any persistant information.
 
-**Count: 65**
+**Count: 66**
 
 ## Table of Contents
 * [R-lang](#r-lang)
@@ -22,6 +22,7 @@ This README is auto-generated. Please edit `HEADER` to include any persistant in
 * [Writing](#writing)
 
 ### R-lang
+* [Save the "current" figure](R/save-the-"current"-figure.md)
 * [Modifying `ggplot2` objects after creation](R/modifying-ggplot2-objects-after-creation.md)
 * [Large datasets in `R`](R/r-large-data.md)
 * [Evaluating string as an expression](R/evaluating-string-as-expression.md)

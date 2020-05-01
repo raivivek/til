@@ -9,6 +9,10 @@
     },
     {
         "Category": "R",
+        "TIL": "save-the-\"current\"-figure.md"
+    },
+    {
+        "Category": "R",
         "TIL": "modifying-ggplot2-objects-after-creation.md"
     },
     {
