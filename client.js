@@ -9,7 +9,7 @@ var pageURL = $(location).attr('href');
 $(function() {
   const data_uri_root = "https://github.com/raivivek/til/blob/master/";
   const category_uri_root = "https://github.com/raivivek/til/tree/master/";
-  $('#query').focus();
+  $('#query').focus().attr('placeholder', "loading...");
 
   var worker = new Worker('resources/scripts/worker2.js');
   $.getJSON('https://raw.githubusercontent.com/raivivek/til/master/data.json')
