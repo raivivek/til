@@ -237,6 +237,10 @@
     },
     {
         "Category": "R",
+        "TIL": "stack-and-unstack.md"
+    },
+    {
+        "Category": "R",
         "TIL": "knitr:-put-code-as-appendix.md"
     },
     {

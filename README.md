@@ -5,7 +5,7 @@ involved in. Often, they are curious and useful insights that I wish to share wi
 everyone but are too short for a full blog post.
 
 Browse them here [til.raivivek.in](https://til.raivivek.in).
-**Count: 66**
+**Count: 67**
 
 ## Table of Contents
 * [R-lang](#r-lang)
@@ -28,6 +28,7 @@ Browse them here [til.raivivek.in](https://til.raivivek.in).
 * [Restarting your R Studio server session](R/restarting-your-r-studio-server-session.md)
 * [Modifying `ggplot2` objects after creation](R/modifying-ggplot2-objects-after-creation.md)
 * [Using conditionals (`if`-`else`) in data pipes](R/using-conditionals-(`if`-`else`)-in-data-pipes.md)
+* [`stack` and `unstack`](R/stack-and-unstack.md)
 * [knitr: Put code as appendix](R/knitr:-put-code-as-appendix.md)
 * [Large datasets in `R`](R/r-large-data.md)
 * [Evaluating string as an expression](R/evaluating-string-as-expression.md)
