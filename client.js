@@ -50,7 +50,7 @@ $(function() {
         '">' + 
         tils[i].Category.toLowerCase() + "</a>/" +
         '<a href="' +
-        data_uri_root + tils[i].Category.toLowerCase() + "/" +
+        data_uri_root + tils[i].Category + "/" +
         tils[i].TIL +
         '">' +
         tils[i].TIL.toLowerCase() +
