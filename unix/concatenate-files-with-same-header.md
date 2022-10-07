@@ -6,7 +6,7 @@ file. Of course, this can be done using R or Python but using Unix tools is way
 faster.
 
 ```
-awk 'FNR==1 && NR!=1{next;}{print}' *.csv`
+awk 'FNR==1 && NR!=1{next;}{print}' *.csv
 ```
 
 Explanation: FNR is the number of lines (records) read so far in the current
