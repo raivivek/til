@@ -5,7 +5,7 @@ possibly generated from the same source and share same headers, into one single
 file. Of course, this can be done using R or Python but using Unix tools is way
 faster.
 
-``
+```
 awk 'FNR==1 && NR!=1{next;}{print}' *.csv`
 ```
 
